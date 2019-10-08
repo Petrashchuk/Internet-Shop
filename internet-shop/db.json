@@ -1,0 +1,1095 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": {
+        "id": 1,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC CANTERBURY",
+      "description": "Inspired by the gorgeous colors of a classic flag, this red, white and blue NATO band celebrates timeless preppy American fashion. The playful band, when paired with the simplistic and elegantly slim dial, gives you a timepiece that can be worn to both work and after work.",
+      "size": "32",
+      "price": 179,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100030",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "18mm",
+        "adjustable_length": "(Min - Max) 150-200mm",
+        "strap": "NATO Strap",
+        "strap_color": "Blue, red and white",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fx33t85oja9?alt=media&token=c766aa19-e4e6-484d-a132-b5885dc89f1d"
+    },
+    {
+      "id": 2,
+      "category": {
+        "id": 2,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE BONDI",
+      "description": "CLASSIC DESIGN MEETS MODERN MINIMALISM\nClassic Petite Bondi, with its fresh white leather strap and an eggshell white dial, signals both simplicity and grace. This ultra-thin watch rests delicately on the arm and highlights that extra bit of fresh energy in your style. Available in rose gold or silver. ",
+      "size": "24",
+      "price": 179,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100189",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 145-185mm",
+        "strap": "Leather Strap",
+        "strap_color": "White",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F688j5ya8dh5?alt=media&token=cdb32bfa-7ec1-4738-b1ed-8fe1d5663d9d"
+    },
+    {
+      "id": 3,
+      "category": {
+        "id": 3,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE CORNWALL",
+      "description": "MATCHES YOUR EVERY STYLE. EVERY DAY.\nThe Classic Petite Cornwall captures the pure essence of simplicity and style. Featuring an all-black NATO strap and a black dial, this clean and elegant watch easily becomes your everyday style companion.",
+      "size": "24",
+      "price": 159,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100215",
+        "case_thickness": "6mm",
+        "dial_Color": "Black",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 143-190mm",
+        "strap": "NATO Strap",
+        "strap_color": "Black",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fwzmk2xj603r?alt=media&token=d2505434-f41b-4f83-8edf-30ab21e6643a"
+    },
+    {
+      "id": 4,
+      "category": {
+        "id": 4,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC WINCHESTER",
+      "description": "Purposely designed to stand out in a subtle yet playful manner, the Classic Winchester is a fan favorite. The classic blue stripes, divided by a single line of bright pink, is the perfect mix of elegance and exuberance. The rose gold dial gives the timepiece a polished finish.",
+      "size": null,
+      "price": 179,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100033",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "",
+        "adjustable_length": "(Min - Max) 150-200mm",
+        "strap": "NATO Strap",
+        "strap_color": "",
+        "Interchangeable_straps": "",
+        "water_resistant": ""
+      },
+      "count": 1,
+      "tax": null,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fm3wi9nbm33p?alt=media&token=21c6b71b-be43-445b-a0ae-833e7ed521dd"
+    },
+    {
+      "id": 5,
+      "category": {
+        "id": 5,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC BAYSWATER",
+      "description": "With classic features such as the slim case, details in rose gold or silver, and our heritage NATO strap in midnight blue, Classic Bayswater is an effortless day-to-evening timepiece.",
+      "size": "32",
+      "price": 179,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100279",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "18mm",
+        "adjustable_length": "(Min - Max) 150-200mm",
+        "strap": "NATO Strap",
+        "strap_color": "Midnight Blue",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F5dynzh7t1yi?alt=media&token=7885bd11-05a9-4f1e-b06b-eb94ff43e02e"
+    },
+    {
+      "id": 6,
+      "category": {
+        "id": 6,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE MELROSE",
+      "description": "A TRUE STYLE STATEMENT\nThis Classic Petite Melrose features a black dial that accentuates classic elegance while adding a splash of refreshing attitude. This watch has you ready to go from office to rooftop party in the blink of an eye.",
+      "size": "24",
+      "price": 189,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100161",
+        "case_thickness": "6mm",
+        "dial_Color": "Black",
+        "movement": "Japanese Quartz Movement",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 150-205mm",
+        "strap": "Mesh",
+        "strap_color": "Rose Gold",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fs98wjiy66sj?alt=media&token=7283a836-f38d-43b1-ac1f-87a11deb75c9"
+    },
+    {
+      "id": 9,
+      "category": {
+        "id": 9,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC ROSELYN",
+      "description": "With classic features such as the slim case, details in rose gold or silver, and our heritage NATO strap in ruby red, Classic Roselyn is an effortless day-to-evening timepiece",
+      "size": "32",
+      "price": 179,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100271",
+        "case_thickness": " 6mm",
+        "dial_Color": " Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "18mm",
+        "adjustable_length": "(Min - Max) 150-200mm",
+        "strap": "NATO Strap",
+        "strap_color": "Ruby Red",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": null,
+      "tax": null,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fd5qzuiq55p?alt=media&token=c7ac9302-0b6e-4497-a64b-0433e40b46c4"
+    },
+    {
+      "id": 10,
+      "category": {
+        "id": 10,
+        "name": "DAPPER"
+      },
+      "name": "DAPPER SHEFFIELD",
+      "description": "Carefully designed with timeless elegance in mind, the Dapper Sheffield is a suitable companion whether you are looking for a watch to go with a dressed up or a more casual look. The 38 mm watch is available in silver or rose gold and comes with the classic Sheffield black genuine leather strap, made from Italian leather. The sophisticated Dapper collection has an eggshell white dial enriched with deep blue hands, Roman numerals and date display. Be your own style icon and speak for a handsome and dapper look at all times.",
+      "size": "32",
+      "price": 219,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100084",
+        "case_thickness": "7mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "19mm",
+        "adjustable_length": "(Min - Max) 160-210mm",
+        "strap": "Leather Strap",
+        "strap_color": "Black",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F7ems1xila96?alt=media&token=1181f571-4e08-48cc-8619-a5d8a8890c68"
+    },
+    {
+      "id": 11,
+      "category": {
+        "id": 11,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC SHEFFIELD",
+      "description": "With leather darker than the deepest parts of the ocean, the Classic Sheffield was carefully designed to stand the test of time while maintaining its effortless beauty. This minimalistic piece proves that simple does not necessarily mean boring. ",
+      "size": "32",
+      "price": 199,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100036",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "18mm",
+        "adjustable_length": "(Min - Max) 160-200mm",
+        "strap": "Leather Strap",
+        "strap_color": "Black",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fovn4ngz1ykl?alt=media&token=37eea278-1251-4800-a5ad-9e6b35370d87"
+    },
+    {
+      "id": 12,
+      "category": {
+        "id": 12,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE BONDI",
+      "description": "CLASSIC DESIGN MEETS MODERN MINIMALISM\nPetite Bondi is this season’s number 1 wardrobe essential. This ultra-thin watch rests delicately on the arm and features a fresh white leather strap, a black dial and details in rose gold. ",
+      "size": "24",
+      "price": 179,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100283",
+        "case_thickness": " 6mm",
+        "dial_Color": " Black",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 145-185mm",
+        "strap": "Leather Strap",
+        "strap_color": "White",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": null,
+      "tax": null,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fqtlfuqr13g?alt=media&token=94fe3ab3-07e4-4981-b5c7-aad57ff08937"
+    },
+    {
+      "id": 13,
+      "category": {
+        "id": 13,
+        "name": "DAPPER"
+      },
+      "name": "DAPPER ST MAWES",
+      "description": "Elegant and polished, the Dapper St Mawes is an unpretentious watch that starts your day at the office and ends it at a cocktail party. The beautiful St Mawes leather strap has been paired with a slim case in silver or rose gold, which makes it an effortless timepiece for every adventure. With sophisticated details such as deep blue hands, Roman numerals and a date display, the Dapper St Mawes is a great addition to any wardrobe, and goes with all styles and ages.",
+      "size": "32",
+      "price": 189,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100095",
+        "case_thickness": "7mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Stainless steel (316L)",
+        "strap_With": "17mm",
+        "adjustable_length": "(Min - Max) 153-195mm",
+        "strap": "Leather Strap",
+        "strap_color": "Brown",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fb285gaowplr?alt=media&token=57f3323a-cf24-4bc3-b902-0058ffc6b0f4"
+    },
+    {
+      "id": 14,
+      "category": {
+        "id": 14,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC READING",
+      "description": "The Classic Reading features a black croc embossed leather strap, a black dial and an ultra-thin 6mm case. Whether you are attending a formal event, playing a game of tennis or enjoying a sunny day at the country club, this watch is an excellent choice and will complement your every outfit.",
+      "size": "32",
+      "price": 199,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100141",
+        "case_thickness": "6mm",
+        "dial_Color": "Black",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "18mm",
+        "adjustable_length": "(Min - Max) 160-200mm",
+        "strap": "Leather Strap",
+        "strap_color": "Black",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fsk7smd5cd9l?alt=media&token=01482301-1c2e-48c7-ad4b-73329a2a030b"
+    },
+    {
+      "id": 15,
+      "category": {
+        "id": 15,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE STERLING",
+      "description": "A SMILE ON YOUR WRIST\nAlready a true design classic, the Classic Petite Sterling with a white dial has a contemporary edge and a fresh look. A stylish watch, modern and timeless at the same time.",
+      "size": "24",
+      "price": 189,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100164",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 150-205mm",
+        "strap": "Mesh",
+        "strap_color": "Silver",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fs0e5xs0qnl?alt=media&token=eececf3d-e723-4b7a-87d5-5204a01a94cb"
+    },
+    {
+      "id": 16,
+      "category": {
+        "id": 16,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE MELROSE",
+      "description": "A TIMELESS CLASSIC\nClassic Petite Melrose features an eggshell white dial and an undeniably elegant rose gold mesh strap. This watch elevates your everyday outfit, your mood and your spirit.",
+      "size": "",
+      "price": 189,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100163",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 150-205mm",
+        "strap": "Mesh",
+        "strap_color": "Rose Gold",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fc7xx90jfvdp?alt=media&token=a2d75b43-6a63-4716-b56d-57b3f2cf8d62"
+    },
+    {
+      "id": 17,
+      "category": {
+        "id": 17,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC WARWICK",
+      "description": "Blue, the color of the sky and the sea, blends naturally with green, the beautiful color of nature. The color combination of the NATO band, when paired with the classy finish of the dial, gives you an elegant timepiece that is perfect for both everyday wear and special events.",
+      "size": "32",
+      "price": 199,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100005",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "adjustable_length": "(Min - Max) 165-220mm",
+        "strap": "NATO Strap",
+        "Interchangeable_straps": "Yes"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fdx87fi5ie7r?alt=media&token=c3f20959-4abd-4b50-9eb1-9acd633c1f6b"
+    },
+    {
+      "id": 18,
+      "category": {
+        "id": 18,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC PETITE YORK",
+      "description": "EXQUISITE DESIGN\nWith classic features such as the deep brown croc embossed Italian leather in the York strap and a neat eggshell white dial, this watch will stand the test of time. ",
+      "size": "24",
+      "price": 179,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100176",
+        "case_thickness": "6mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 145-185mm",
+        "strap": "Leather Strap",
+        "strap_color": "Dark brown",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F9luzr86kv0d?alt=media&token=569f44b0-1dee-4359-a208-efbaf4d2ac01"
+    },
+    {
+      "id": 19,
+      "category": {
+        "id": 19,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE DOVER",
+      "description": "The Classic Petite Dover, with its all-white strap, captures the essence of summer. This minimalistic wristwatch features a black dial and details in rose gold. Let the memories of summer rest delicately on your wrist for the seasons to come.",
+      "size": "24",
+      "price": 159,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100312",
+        "case_thickness": "6mm",
+        "dial_Color": "Black",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "adjustable_length": "(Min - Max) 143-190mm",
+        "strap": "NATO Strap",
+        "strap_color": "White",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fv3pwsrn8ika?alt=media&token=afe04b19-0743-49c1-894c-584ec766a36a"
+    },
+    {
+      "id": 20,
+      "category": {
+        "id": 20,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE YORK",
+      "description": "CONFIDENCE AND STYLE\nThe elegant Classic Petite with the black dial and the dark brown croc embossed Italian leather strap offers a sophisticated look and feel. This is a watch to love for years to come.",
+      "size": "24",
+      "price": 179,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100170",
+        "case_thickness": "6mm",
+        "dial_Color": "Black",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 145-185mm",
+        "strap": "Leather Strap",
+        "strap_color": "Dark brown",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fkzl6owl6ot8?alt=media&token=1dcfdb89-f14e-4850-ba8e-14255627b8dd"
+    },
+    {
+      "id": 21,
+      "category": {
+        "id": 21,
+        "name": "CLASSIC"
+      },
+      "name": "CLASSIC ST MAWES",
+      "description": "Featuring a classy brown leather strap and an elegant black dial, the Classic St. Mawes proves that perfection in engineering not only is a possibility, but a reality.",
+      "size": "32",
+      "price": 199,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100136",
+        "case_thickness": "6mm",
+        "dial_Color": "Black",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "18mm",
+        "adjustable_length": "(Min - Max) 160-200mm",
+        "strap": "Leather Strap",
+        "strap_color": "Brown",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F68l27hyc36l?alt=media&token=a6008ed2-f95b-451c-acb5-51ccabbb22ca"
+    },
+    {
+      "id": 22,
+      "category": {
+        "id": 22,
+        "name": "DAPPER"
+      },
+      "name": "DAPPER BRISTOL",
+      "description": "The Dapper Bristol is an unpretentious and effortless watch that has been designed for every adventure. Made from genuine Italian leather, the deep brown Bristol strap can be paired with a silver or rose gold case, which makes for an elegant and polished watch. The 34mm watch has an eggshell white dial enriched with deep blue hands, Roman numerals and date display, which makes it a great addition to any wardrobe.",
+      "size": "32",
+      "price": 189,
+      "sex": "Man",
+      "moreInfo": {
+        "sku": "DW00100098",
+        "case_thickness": "7mm",
+        "dial_Color": "Eggshell White",
+        "movement": "Japanese Quartz Movement",
+        "material": "Stainless steel (316L)",
+        "strap_With": "17mm",
+        "adjustable_length": "(Min - Max) 153-195mm",
+        "strap": "Leather Strap",
+        "strap_color": "Dark brown",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "36",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F0ak69n2htgae?alt=media&token=2e86509e-563a-452e-838c-2788d5f3b154"
+    },
+    {
+      "id": 23,
+      "category": {
+        "id": 23,
+        "name": "CLASSIC PETITE"
+      },
+      "name": "CLASSIC PETITE ASHFIELD",
+      "description": "ELEGANT AND DISTINGUISHED\nEnter the new season in timeless fashion with Classic Petite Ashfield. This ultra-thin watch rests delicately on the arm and features a matte black mesh strap and a sophisticated black dial. Available with details in rose gold or silver.",
+      "size": "24",
+      "price": 189,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "DW00100201",
+        "case_thickness": "6mm",
+        "dial_Color": "Black",
+        "movement": "Japanese Quartz Movement",
+        "material": "Double plated stainless steel (316L)",
+        "strap_With": "14mm",
+        "adjustable_length": "(Min - Max) 150-205mm",
+        "strap": "Mesh",
+        "strap_color": "Black",
+        "Interchangeable_straps": "Yes",
+        "water_resistant": "Up to 3 ATM (Rain resistant)"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "28",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F46anpedzmtw?alt=media&token=42584cb3-5d69-45fa-a499-5cfc63a5fb0d"
+    },
+    {
+      "id": 24,
+      "category": {
+        "id": 24,
+        "name": "DAPPER"
+      },
+      "name": "k",
+      "description": "k",
+      "size": "24",
+      "price": 100,
+      "sex": "Woman",
+      "moreInfo": {
+        "sku": "k",
+        "case_thickness": "k",
+        "dial_Color": "k",
+        "movement": "k",
+        "material": "k",
+        "strap_With": "k",
+        "adjustable_length": "k",
+        "strap": "k",
+        "strap_color": "k",
+        "Interchangeable_straps": "k",
+        "water_resistant": "k"
+      },
+      "count": 1,
+      "tax": 33.5,
+      "anotherSize": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fylj0v21bv0n?alt=media&token=92f796fd-aee4-4a5e-8ecc-3fda912c55b5"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "CLASSIC PETITE"
+    },
+    {
+      "id": 2,
+      "name": "CLASSIC"
+    },
+    {
+      "id": 3,
+      "name": "DAPPER"
+    },
+    {
+      "id": 4,
+      "name": "ddd"
+    }
+  ],
+  "orders": [
+    {
+      "address": {
+        "id": 17,
+        "category": {
+          "id": 17,
+          "name": "CLASSIC"
+        },
+        "name": "CLASSIC WARWICK",
+        "description": "Blue, the color of the sky and the sea, blends naturally with green, the beautiful color of nature. The color combination of the NATO band, when paired with the classy finish of the dial, gives you an elegant timepiece that is perfect for both everyday wear and special events.",
+        "size": "32",
+        "price": 199,
+        "sex": "Man",
+        "moreInfo": {
+          "sku": "DW00100005",
+          "case_thickness": "6mm",
+          "dial_Color": "Eggshell White",
+          "movement": "Japanese Quartz Movement",
+          "material": "Double plated stainless steel (316L)",
+          "adjustable_length": "(Min - Max) 165-220mm",
+          "strap": "NATO Strap",
+          "Interchangeable_straps": "Yes"
+        },
+        "count": 1,
+        "tax": 33.5,
+        "anotherSize": "36",
+        "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fdx87fi5ie7r?alt=media&token=c3f20959-4abd-4b50-9eb1-9acd633c1f6b",
+        "address": {
+          "email": "p1024964@nwytg.net",
+          "fname": "Andrii",
+          "lname": "Petrashchuk",
+          "phone_number": "3333333333",
+          "address1": "Stefanyka",
+          "address2": "dasdsadsad",
+          "city": "Lviv",
+          "zipCode": "76665",
+          "country": "Afghanistan"
+        },
+        "delivery": "Home Delivery",
+        "paymant": "upon_receipt",
+        "date": "2019-09-16T20:14:19.687Z"
+      },
+      "orders": [
+        {
+          "id": 24,
+          "category": {
+            "id": 24,
+            "name": "DAPPER"
+          },
+          "name": "k",
+          "description": "k",
+          "size": "24",
+          "price": 100,
+          "sex": "Woman",
+          "moreInfo": {
+            "sku": "k",
+            "case_thickness": "k",
+            "dial_Color": "k",
+            "movement": "k",
+            "material": "k",
+            "strap_With": "k",
+            "adjustable_length": "k",
+            "strap": "k",
+            "strap_color": "k",
+            "Interchangeable_straps": "k",
+            "water_resistant": "k"
+          },
+          "count": 1,
+          "tax": 33.5,
+          "anotherSize": "",
+          "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fylj0v21bv0n?alt=media&token=92f796fd-aee4-4a5e-8ecc-3fda912c55b5",
+          "address": {
+            "email": "p1024964@nwytg.net",
+            "fname": "Andrii",
+            "lname": "Petrashchuk",
+            "phone_number": "3333333333",
+            "address1": "Stefanyka",
+            "address2": "dasdsadsad",
+            "city": "Lviv",
+            "zipCode": "76665",
+            "country": "Afghanistan"
+          },
+          "delivery": "Home Delivery",
+          "paymant": "upon_receipt"
+        },
+        {
+          "id": 17,
+          "category": {
+            "id": 17,
+            "name": "CLASSIC"
+          },
+          "name": "CLASSIC WARWICK",
+          "description": "Blue, the color of the sky and the sea, blends naturally with green, the beautiful color of nature. The color combination of the NATO band, when paired with the classy finish of the dial, gives you an elegant timepiece that is perfect for both everyday wear and special events.",
+          "size": "32",
+          "price": 199,
+          "sex": "Man",
+          "moreInfo": {
+            "sku": "DW00100005",
+            "case_thickness": "6mm",
+            "dial_Color": "Eggshell White",
+            "movement": "Japanese Quartz Movement",
+            "material": "Double plated stainless steel (316L)",
+            "adjustable_length": "(Min - Max) 165-220mm",
+            "strap": "NATO Strap",
+            "Interchangeable_straps": "Yes"
+          },
+          "count": 1,
+          "tax": 33.5,
+          "anotherSize": "36",
+          "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fdx87fi5ie7r?alt=media&token=c3f20959-4abd-4b50-9eb1-9acd633c1f6b",
+          "address": {
+            "email": "p1024964@nwytg.net",
+            "fname": "Andrii",
+            "lname": "Petrashchuk",
+            "phone_number": "3333333333",
+            "address1": "Stefanyka",
+            "address2": "dasdsadsad",
+            "city": "Lviv",
+            "zipCode": "76665",
+            "country": "Afghanistan"
+          },
+          "delivery": "Home Delivery",
+          "paymant": "upon_receipt",
+          "date": "2019-09-16T20:14:19.687Z"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": {
+        "id": 2,
+        "category": {
+          "id": 2,
+          "name": "CLASSIC PETITE"
+        },
+        "name": "CLASSIC PETITE BONDI",
+        "description": "CLASSIC DESIGN MEETS MODERN MINIMALISM\nClassic Petite Bondi, with its fresh white leather strap and an eggshell white dial, signals both simplicity and grace. This ultra-thin watch rests delicately on the arm and highlights that extra bit of fresh energy in your style. Available in rose gold or silver. ",
+        "size": "24",
+        "price": 179,
+        "sex": "Woman",
+        "moreInfo": {
+          "sku": "DW00100189",
+          "case_thickness": "6mm",
+          "dial_Color": "Eggshell White",
+          "movement": "Japanese Quartz Movement",
+          "material": "Double plated stainless steel (316L)",
+          "strap_With": "14mm",
+          "adjustable_length": "(Min - Max) 145-185mm",
+          "strap": "Leather Strap",
+          "strap_color": "White",
+          "Interchangeable_straps": "Yes",
+          "water_resistant": "Up to 3 ATM (Rain resistant)"
+        },
+        "count": 1,
+        "tax": 33.5,
+        "anotherSize": "28",
+        "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F688j5ya8dh5?alt=media&token=cdb32bfa-7ec1-4738-b1ed-8fe1d5663d9d",
+        "address": {
+          "email": "p1024964@nwytg.net",
+          "fname": "Andrii",
+          "lname": "Petrashchuk",
+          "phone_number": "3333333333",
+          "address1": "Stefanyka",
+          "address2": "dasdsadsad",
+          "city": "Lviv",
+          "zipCode": "76665",
+          "country": "American Samoa"
+        },
+        "delivery": "Home Delivery",
+        "paymant": "by_card",
+        "date": "2019-09-16T20:21:50.592Z"
+      },
+      "orders": [
+        {
+          "id": 15,
+          "category": {
+            "id": 15,
+            "name": "CLASSIC PETITE"
+          },
+          "name": "CLASSIC PETITE STERLING",
+          "description": "A SMILE ON YOUR WRIST\nAlready a true design classic, the Classic Petite Sterling with a white dial has a contemporary edge and a fresh look. A stylish watch, modern and timeless at the same time.",
+          "size": "24",
+          "price": 189,
+          "sex": "Woman",
+          "moreInfo": {
+            "sku": "DW00100164",
+            "case_thickness": "6mm",
+            "dial_Color": "Eggshell White",
+            "movement": "Japanese Quartz Movement",
+            "material": "",
+            "strap_With": "14mm",
+            "adjustable_length": "(Min - Max) 150-205mm",
+            "strap": "Mesh",
+            "strap_color": "Silver",
+            "Interchangeable_straps": "Yes",
+            "water_resistant": "Up to 3 ATM (Rain resistant)"
+          },
+          "count": 1,
+          "tax": 33.5,
+          "anotherSize": "28",
+          "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fs0e5xs0qnl?alt=media&token=eececf3d-e723-4b7a-87d5-5204a01a94cb",
+          "address": {
+            "email": "p1024964@nwytg.net",
+            "fname": "Andrii",
+            "lname": "Petrashchuk",
+            "phone_number": "3333333333",
+            "address1": "Stefanyka",
+            "address2": "dasdsadsad",
+            "city": "Lviv",
+            "zipCode": "76665",
+            "country": "American Samoa"
+          },
+          "delivery": "Home Delivery",
+          "paymant": "by_card"
+        },
+        {
+          "id": 12,
+          "category": {
+            "id": 12,
+            "name": "CLASSIC PETITE"
+          },
+          "name": "CLASSIC PETITE BONDI",
+          "description": "CLASSIC DESIGN MEETS MODERN MINIMALISM\nPetite Bondi is this season’s number 1 wardrobe essential. This ultra-thin watch rests delicately on the arm and features a fresh white leather strap, a black dial and details in rose gold. ",
+          "size": "24",
+          "price": 179,
+          "sex": "Woman",
+          "moreInfo": {
+            "sku": "DW00100283",
+            "case_thickness": " 6mm",
+            "dial_Color": " Black",
+            "movement": "Japanese Quartz Movement",
+            "material": "Double plated stainless steel (316L)",
+            "strap_With": "14mm",
+            "adjustable_length": "(Min - Max) 145-185mm",
+            "strap": "Leather Strap",
+            "strap_color": "White",
+            "Interchangeable_straps": "Yes",
+            "water_resistant": "Up to 3 ATM (Rain resistant)"
+          },
+          "count": null,
+          "tax": null,
+          "anotherSize": "28",
+          "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fqtlfuqr13g?alt=media&token=94fe3ab3-07e4-4981-b5c7-aad57ff08937",
+          "address": {
+            "email": "p1024964@nwytg.net",
+            "fname": "Andrii",
+            "lname": "Petrashchuk",
+            "phone_number": "3333333333",
+            "address1": "Stefanyka",
+            "address2": "dasdsadsad",
+            "city": "Lviv",
+            "zipCode": "76665",
+            "country": "American Samoa"
+          },
+          "delivery": "Home Delivery",
+          "paymant": "by_card"
+        },
+        {
+          "id": 2,
+          "category": {
+            "id": 2,
+            "name": "CLASSIC PETITE"
+          },
+          "name": "CLASSIC PETITE BONDI",
+          "description": "CLASSIC DESIGN MEETS MODERN MINIMALISM\nClassic Petite Bondi, with its fresh white leather strap and an eggshell white dial, signals both simplicity and grace. This ultra-thin watch rests delicately on the arm and highlights that extra bit of fresh energy in your style. Available in rose gold or silver. ",
+          "size": "24",
+          "price": 179,
+          "sex": "Woman",
+          "moreInfo": {
+            "sku": "DW00100189",
+            "case_thickness": "6mm",
+            "dial_Color": "Eggshell White",
+            "movement": "Japanese Quartz Movement",
+            "material": "Double plated stainless steel (316L)",
+            "strap_With": "14mm",
+            "adjustable_length": "(Min - Max) 145-185mm",
+            "strap": "Leather Strap",
+            "strap_color": "White",
+            "Interchangeable_straps": "Yes",
+            "water_resistant": "Up to 3 ATM (Rain resistant)"
+          },
+          "count": 1,
+          "tax": 33.5,
+          "anotherSize": "28",
+          "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2F688j5ya8dh5?alt=media&token=cdb32bfa-7ec1-4738-b1ed-8fe1d5663d9d",
+          "address": {
+            "email": "p1024964@nwytg.net",
+            "fname": "Andrii",
+            "lname": "Petrashchuk",
+            "phone_number": "3333333333",
+            "address1": "Stefanyka",
+            "address2": "dasdsadsad",
+            "city": "Lviv",
+            "zipCode": "76665",
+            "country": "American Samoa"
+          },
+          "delivery": "Home Delivery",
+          "paymant": "by_card",
+          "date": "2019-09-16T20:21:50.592Z"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": {
+        "email": "p1024964@nwytg.net",
+        "fname": "Andrii",
+        "lname": "Petrashchuk",
+        "phone_number": "3333333333",
+        "address1": "Stefanyka",
+        "address2": "dasdsadsad",
+        "city": "Lviv",
+        "zipCode": "76665",
+        "country": "Albania",
+        "date": "2019-09-16T20:27:44.342Z"
+      },
+      "orders": [
+        {
+          "id": 19,
+          "category": {
+            "id": 19,
+            "name": "CLASSIC PETITE"
+          },
+          "name": "CLASSIC PETITE DOVER",
+          "description": "The Classic Petite Dover, with its all-white strap, captures the essence of summer. This minimalistic wristwatch features a black dial and details in rose gold. Let the memories of summer rest delicately on your wrist for the seasons to come.",
+          "size": "24",
+          "price": 159,
+          "sex": "Woman",
+          "moreInfo": {
+            "sku": "DW00100312",
+            "case_thickness": "6mm",
+            "dial_Color": "Black",
+            "movement": "Japanese Quartz Movement",
+            "material": "Double plated stainless steel (316L)",
+            "adjustable_length": "(Min - Max) 143-190mm",
+            "strap": "NATO Strap",
+            "strap_color": "White",
+            "Interchangeable_straps": "Yes",
+            "water_resistant": "Up to 3 ATM (Rain resistant)"
+          },
+          "count": 1,
+          "tax": 33.5,
+          "anotherSize": "28",
+          "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fv3pwsrn8ika?alt=media&token=afe04b19-0743-49c1-894c-584ec766a36a",
+          "address": {
+            "email": "p1024964@nwytg.net",
+            "fname": "Andrii",
+            "lname": "Petrashchuk",
+            "phone_number": "3333333333",
+            "address1": "Stefanyka",
+            "address2": "dasdsadsad",
+            "city": "Lviv",
+            "zipCode": "76665",
+            "country": "Albania",
+            "date": "2019-09-16T20:27:44.342Z"
+          },
+          "delivery": "Home Delivery",
+          "paymant": "upon_receipt"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "address": {
+        "email": "p1024964@nwytg.net",
+        "fname": "Andrii",
+        "lname": "Petrashchuk",
+        "phone_number": "3333333333",
+        "address1": "Stefanyka",
+        "address2": "dasdsadsad",
+        "city": "Lviv",
+        "zipCode": "76665",
+        "country": "Åland Islands",
+        "date": "2019-09-16T20:32:26.390Z"
+      },
+      "orders": [
+        {
+          "id": 24,
+          "category": {
+            "id": 24,
+            "name": "DAPPER"
+          },
+          "name": "k",
+          "description": "k",
+          "size": "24",
+          "price": 100,
+          "sex": "Woman",
+          "moreInfo": {
+            "sku": "k",
+            "case_thickness": "k",
+            "dial_Color": "k",
+            "movement": "k",
+            "material": "k",
+            "strap_With": "k",
+            "adjustable_length": "k",
+            "strap": "k",
+            "strap_color": "k",
+            "Interchangeable_straps": "k",
+            "water_resistant": "k"
+          },
+          "count": 1,
+          "tax": 33.5,
+          "anotherSize": "",
+          "img": "https://firebasestorage.googleapis.com/v0/b/finallwork.appspot.com/o/images%2Fylj0v21bv0n?alt=media&token=92f796fd-aee4-4a5e-8ecc-3fda912c55b5",
+          "address": {
+            "email": "p1024964@nwytg.net",
+            "fname": "Andrii",
+            "lname": "Petrashchuk",
+            "phone_number": "3333333333",
+            "address1": "Stefanyka",
+            "address2": "dasdsadsad",
+            "city": "Lviv",
+            "zipCode": "76665",
+            "country": "Åland Islands",
+            "date": "2019-09-16T20:32:26.390Z"
+          },
+          "delivery": "Home Delivery",
+          "paymant": "upon_receipt"
+        }
+      ],
+      "id": 4
+    }
+  ],
+  "email_notification": [
+    {
+      "value": "qq@gmail.com",
+      "id": 1
+    },
+    {
+      "value": "aaaaa@gmail.com",
+      "id": 2
+    },
+    {
+      "value": "sasda@gmail.com",
+      "id": 3
+    },
+    {
+      "value": "Taras@nwytg.net",
+      "id": 4
+    }
+  ]
+}

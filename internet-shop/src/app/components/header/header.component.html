@@ -1,0 +1,275 @@
+<header
+  [ngStyle]="{height:url==='/user/check_out'||url==='/user/privacy_policy'||url==='/user/ret_policy'||url==='/user/terms'?'auto':'434px'}"
+  [ngClass]="{'forStaticHeight':url==='/user/home' || url==='/user/contact'||url==='/user/watch'||url==='/user/mens'||url==='/user/womens'||url==='/user/size_Info'||url.match('/products/')||url==='/user/our_story'||url==='/user/check_out'}"
+  (scroll)="scrollHandler($event)">
+  <div [ngClass]="{'backWatch':url==='/user/watch','backHome':url==='/user/home',
+  'backSizeInfo':url==='/user/size_Info','backContact':url==='/user/contact',
+  'backAbout':url==='/user/our_story','backWomens':url==='/user/womens','backMens':url==='/user/mens','backProductDetails':url.match('/products/'),'backCheckOut':url==='/user/check_out'}">
+    <div *ngIf="url==='/user/check_out'" class="d-flex justify-content-between align-items-center">
+      <h5 class="contback" (click)="backTo()"
+          style="cursor: pointer; color: white;letter-spacing: 3px;padding: 30px 90px;font-size: 0.9em;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+        CONTINUE SHOPPING
+      </h5>
+      <h1 class="showWD" style="letter-spacing: 3px;color: #cdbc7a;margin-right: 25px;">DW</h1>
+    </div>
+    <h6 [ngClass]="url==='/user/check_out'?'backAnother':'backHere'"
+        class="text-uppercase textShow for-h4 d-flex justify-content-center align-items-center font-weight-bold"
+        [ngStyle]="{color:url==='/user/watch'||url==='/user/our_story'||url==='/user/contact'||url.match('/products/')?'white':'black'}">
+      Daniel
+      Wellington</h6>
+
+    <div class=" container-fluid">
+      <div class="bg-light" [ngStyle]="{display:url==='/user/check_out'?'none':'block'}">
+
+        <!--<nav class="navbar mediaNav fixedClass cremabtn anotherNav navbar-expand-lg d-flex navbar-light anotherMenu"-->
+             <!--#anotherMenu>-->
+          <!--<button class="navbar-toggler tt" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"-->
+                  <!--aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--<span class="navbar-toggler-icon"></span>-->
+          <!--</button>-->
+
+          <!--<h5 class="textD" style="color: #cdbc7a;letter-spacing: 3px;">-->
+            <!--Daniel-->
+            <!--Wellington</h5>-->
+          <!--<div class="collapse navbar-collapse" id="navbarTogglerDemo03">-->
+            <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0">-->
+              <!--<li><a class="nav-link a-a" routerLink="home">Home</a></li>-->
+              <!--<div class="btn-group dropright">-->
+                <!--<a class="dropdown-toggle nav-item a-a" data-toggle="dropdown" aria-haspopup="true"-->
+                   <!--aria-expanded="false">-->
+                  <!--Watch-->
+                <!--</a>-->
+                <!--<div class="dropdown-menu position-absolute">-->
+                  <!--<a class="dropdown-item nav-link " [routerLink]="['/user/watch']">Watches</a>-->
+                  <!--<a class="dropdown-item nav-link " [routerLink]="['/user/mens']">Men's Watches</a>-->
+                  <!--<a class="dropdown-item nav-link " [routerLink]="['/user/womens']" href="#">Women's Watches</a>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<li class="nav-item active"><a class="nav-link a-a" routerLink="contact">Contact</a></li>-->
+              <!--<li class="nav-item li position-relative"><a class="a-a a" data-toggle="modal" data-target="#ordersModal">Orders</a><span-->
+                <!--*ngIf="getProduct.length" class="dots">{{getProduct.length}}</span></li>-->
+            <!--</ul>-->
+          <!--</div>-->
+        <!--</nav>-->
+
+
+
+        <nav class="navbar navbar-light amber lighten-4 mb-4  mediaNav fixedClass cremabtn anotherNav anotherMenu" #anotherMenu>
+
+          <div class="d-flex justify-content-between">
+          <button (click)="toggle()" class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                  aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon1" #openMenu><p></p><p></p><p></p></div >
+          </button>
+            <h5 class="textD" style="color: #cdbc7a;letter-spacing: 3px;">
+              Daniel
+              Wellington</h5>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li><a class="nav-link a-a" routerLink="home">Home</a></li>
+              <div class="btn-group dropright">
+                <a class="dropdown-toggle nav-item a-a" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                  Watch
+                </a>
+                <div class="dropdown-menu position-absolute">
+                  <a class="dropdown-item nav-link " [routerLink]="['/user/watch']">Watches</a>
+                  <a class="dropdown-item nav-link " [routerLink]="['/user/mens']">Men's Watches</a>
+                  <a class="dropdown-item nav-link " [routerLink]="['/user/womens']" href="#">Women's Watches</a>
+                </div>
+              </div>
+              <li class="nav-item active"><a class="nav-link a-a" routerLink="contact">Contact</a></li>
+              <li class="nav-item li position-relative"><a class="a-a a" data-toggle="modal" data-target="#ordersModal">Orders</a><span
+                *ngIf="getProduct.length" class="dots">{{getProduct.length}}</span></li>
+            </ul>
+
+          </div>
+          <!-- Collapsible content -->
+
+        </nav>
+
+
+
+
+
+        <nav class="for-nav" #menu>
+          <ul class=" justify-content-center ul">
+            <li class="nav-item li"><a routerLink="home">Home</a></li>
+            <div class="dropdown newDrop">
+              <li class="nav-item  li"><a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
+                                          aria-haspopup="true" aria-expanded="false" routerLink="watch">Watch</a></li>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item a nav-link" [routerLink]="['/user/watch']">Watches</a>
+                <a class="dropdown-item a nav-link" [routerLink]="['/user/mens']">Men's Watches</a>
+                <a class="dropdown-item a nav-link" [routerLink]="['/user/womens']" href="#">Women's Watches</a>
+              </div>
+            </div>
+            <li class="nav-item li active"><a class="a" routerLink="contact">Contact</a></li>
+            <li class="nav-item li position-relative"><a class="a" data-toggle="modal"
+                                                         data-target="#ordersModal">Orders</a><span
+              *ngIf="getProduct.length" class="dots">{{getProduct.length}}</span></li>
+          </ul>
+
+          <!--<nav class="navbar navbar-expand-lg navbar-light for-nav navbar" #menu>-->
+          <!--<a class="navbar-brand" href="#">DW</a>-->
+          <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+          <!--<span class="navbar-toggler-icon"></span>-->
+          <!--</button>-->
+          <!--<div class="collapse navbar-collapse"id="navbarNav">-->
+          <!--<ul class="navbar-nav">-->
+          <!--<li class="nav-item active"><a class="nav-link" routerLink="home">Home</a></li>-->
+          <!--<div class="dropdown">-->
+          <!--<li  class="nav-item active"><a class="dropdown-toggle nav-link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="watch">Watch</a></li>-->
+          <!--<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">-->
+          <!--<a class="dropdown-item nav-link" [routerLink]="['/user/watch']">Watches</a>-->
+          <!--<a class="dropdown-item nav-link" [routerLink]="['/user/mens']">Men's Watches</a>-->
+          <!--<a class="dropdown-item nav-link" [routerLink]="['/user/womens']" href="#">Women's Watches</a>-->
+          <!--</div>-->
+          <!--</div>-->
+          <!--<li class="nav-item active"><a class="nav-link" routerLink="contact">Contact</a></li>-->
+          <!--<li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#ordersModal">Orders</a>-->
+          <!--</li>-->
+          <!--</ul>-->
+          <!--</div>-->
+          <!--</nav>-->
+        </nav>
+      </div>
+    </div>
+    <div *ngIf="url!=='/user/contact'"
+         class="container d-flex align-items-center all-block-home all-info-block">
+      <div class="main-block-home"
+           *ngIf="url!=='/user/size_Info'&& url!=='/user/our_story'&&url!=='/user/watch' && url!=='/user/mens'&& url!=='/user/womens'&& url!=='/user/check_out' && url!=='/user/privacy_policy' && url!=='/user/ret_policy' && url!=='/user/terms'"
+           style="width: 28%;" [ngStyle]="{height:status?'0':'auto',color:st?'gainsboro':'black'}">
+        <h5 class="text-uppercase firstP text-center">the new</h5>
+        <h1 class="text-uppercase myH1 title">Dover</h1>
+        <p style="font-size: 12px; letter-spacing: 2px; margin-top: -20px;" class="text-center myP">AVAILABLE IN 36MM,
+          32MM
+          AND 28MM</p>
+      </div>
+      <div *ngIf="url==='/user/size_Info'" class="main-block-info" [ngStyle]="{height:status?'0':'auto'}">
+        <h1 class="text-center for-h1-info" style="letter-spacing: 1px">NOT SURE WHAT
+          SIZE TO CHOOSE?</h1>
+        <p style="font-size: 14px; letter-spacing: 2px;" class="text-center">HERE IS SOME INFORMATION
+          THAT MIGHT HELP YOU</p>
+      </div>
+      <div *ngIf="url==='/user/our_story'" class="d-flex h-100 w-100 align-items-end justify-content-center">
+        <h1 style="letter-spacing: 2px; font-size: 64px" class="text-uppercase text-white">our Story</h1>
+      </div>
+      <div class="main-block-home" *ngIf="url==='/user/mens'">
+        <h1 style="letter-spacing: 4px; font-size: 54px" class="text-uppercase ">MEN'S WATCHES</h1>
+        <p class="text-uppercase text-center" style="font-size: 0.8em;">MAKE A STATEMENT ABOUT YOUR STYLE</p>
+      </div>
+      <div *ngIf="url==='/user/womens'" class="main-block-home">
+        <h1 style="letter-spacing: 4px; font-size: 54px" class="text-uppercase ">Women's WATCHES</h1>
+        <p class="text-uppercase text-center" style="font-size: 0.8em;">ELEGANT SIMPLICITY AND TIMELESS DETAILS</p>
+      </div>
+      <div *ngIf="url==='/user/watch'" class="d-flex h-100 w-100 align-items-end">
+        <div class="main-block-home" id="myDiv">
+          <h1 style="letter-spacing: 2px; font-size: 44px" class="text-uppercase text-white">All watches</h1>
+          <h6 class="text-white">A MODERN CLASSIC FOR EVERY OCCASION</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="arr" style="margin-left: -1px;"
+     [ngStyle]="{display:url==='/user/privacy_policy'||url==='/user/ret_policy'||url==='/user/terms'?'none':'block'}">
+  <section
+    [ngClass]="{'mrgTop1':url==='/user/watch'||url==='/user/our_story'||url==='/user/home'||url==='/user/mens'||url==='/user/womens','withoutMrg':url==='/user/check_out','mrgTop5':url==='/user/contact','mrgTop4':url.match('/products/') , 'mrgTopMore':url==='/user/size_Info'||url==='/user/our_story'}"
+    class="arrived row justify-content-around  align-items-center">
+    <div>
+      <img class="for-svg-air"
+           src="https://images.vexels.com/media/users/3/146202/isolated/preview/1e82ba9d8568dc00ca5b37df87c2f2f3-silueta-de-aterrizaje-de-avi--n-by-vexels.png"
+           alt="">
+      <span>FREE DELIVERY</span>
+    </div>
+    <div>
+      <img class="for-svg-air" style="width: 30px;" src="https://i.ya-webdesign.com/images/empty-box-png-16.png" alt="">
+      <span>FREE RETURNS</span>
+    </div>
+    <div>
+      <img class="for-svg-air" style="width: 30px; "
+           src="https://cdn4.iconfinder.com/data/icons/ios7-essence/22/circle_clock_time_history_recent-128.png" alt="">
+      <span>TWO YEARS WARRANTY</span>
+    </div>
+  </section>
+</div>
+<div class="modal fade" id="ordersModal" tabindex="-1" role="dialog" aria-labelledby="ordersModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document" style="height: 70vh;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="letter-spacing: 3px;" id="ordersModalLabel">YOUR CART</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ">
+        <div class="container-fluid wrapp" [ngStyle]="{overflowY:wrapp?'scroll':'auto'}">
+          <div *ngIf="!getProduct.length">
+            <div class="col-12 d-flex justify-content-center">YOU HAVE NO ITEMS IN YOUR SHOPPING CART.</div>
+            <div class="for-btn d-flex justify-content-center mt-4">
+              <button data-dismiss="modal" class="btn goToCheck btn-block text-uppercase col-8 mt-4"><span>CONTINUE Shopping</span>
+              </button>
+            </div>
+          </div>
+          <div style="height: 100px;" class="d-flex justify-content-between mt-5 mb-5"
+               *ngFor="let product of getProduct;">
+            <div class="ImgMy">
+              <img style="width: 110px;" [src]="product?.img" alt="">
+            </div>
+            <div class="info">
+              <h5>{{product?.name}}</h5>
+              <p style="margin-top: 10px;">{{product?.price|currency}}</p>
+              <p>{{product?.size || product?.anotherSize}}MM</p>
+            </div>
+            <div>
+              <div class="rem text-right">
+                <img style="width: 15px;height: 15px; cursor: pointer;" (click)="removeProduct(product.id)"
+                     src="data:image/jpeg;base64,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"
+                     alt="">
+              </div>
+              <div class="for-btn">
+                <div class="btn-div" (click)="decProduct(product.id)">-</div>
+                <span style="font-size: 16px;margin:0 10px;">{{product?.count}}</span>
+                <div class="btn-div" (click)="incProduct(product.id)">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-block">
+        <div style="color: rgb(151, 151, 151);" *ngIf="getProduct.length" class="d-flex  justify-content-between">
+          <p style="letter-spacing: 2px">TAX</p>
+          <p>{{tax|currency}}</p>
+        </div>
+        <div *ngIf="getProduct.length">
+          <hr>
+        </div>
+        <div *ngIf="getProduct.length" class="d-flex justify-content-between">
+          <p style="letter-spacing: 2px">GRAND TOTAL</p>
+          <p>{{totalPrice|currency}}</p>
+        </div>
+        <div *ngIf="getProduct.length" class="col-12">
+          <button type="button" class="btn btn-block text-uppercase goToCheck" data-dismiss="modal"
+                  (click)="checkOut(product)">
+            <span style="font-size: 1.1em;">GO to checkout</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div [ngStyle]="{display:url==='/user/privacy_policy'||url==='/user/ret_policy'||url==='/user/terms'?'block':'none'}"
+     style="height: 50px;">
+</div>
+
+
+
+
+

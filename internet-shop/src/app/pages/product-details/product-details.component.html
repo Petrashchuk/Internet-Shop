@@ -1,0 +1,354 @@
+<div style="height: 100px;"></div>
+
+<div class="container">
+  <div>
+    <div class="row dl">
+      <div class="card-header col-6 bg-white text-center">
+        <img [src]="view?.img" style="width:350px; height:300px;" alt="">
+      </div>
+      <div style="position: relative;" class="col-6 ">
+        <div class="d-flex justify-content-between">
+          <h4 class="for-h  " style="margin-left: -2px">{{view?.name}}</h4>
+          <p style="  margin-left: 30px;"><span class="h5"
+                                                style="letter-spacing: 2px;">{{view?.price | currency}}</span></p>
+        </div>
+        <div class="d-flex">
+          <div>
+            <p style="font-size: 1em">COLOR:</p>
+            <div class="d-flex">
+              <div class="bg-c1"></div>
+              <div class="bg-c2"></div>
+            </div>
+          </div>
+          <div class="ml-4">
+            <p style="font-size: 1em">SIZE:</p>
+            <div class="d-flex for-size" [ngClass]="{'borderMy':view?.anotherSize && view.size}">
+              <button *ngIf="view?.size" (click)="clickOnbtn()" [ngClass]="styleforBtn?'btnSizeActive':'btnSize'"
+                      [ngStyle]="{width:view?.anotherSize?'50%':'100%',paddingLeft:view?.anotherSize?'8px':'0'}">
+                {{view?.size}}mm
+              </button>
+              <button *ngIf="view?.anotherSize" (click)="clickOnbtn()"
+                      [ngClass]="styleforBtn1?'btnSizeActive':'btnSize'"
+                      [ngStyle]="{width:view?.size?'50%':'100%',paddingLeft:view?.size?'8px':'0'}" class="btnSize"
+                      style="padding-left: 8px;">{{view?.anotherSize}}mm
+              </button>
+            </div>
+          </div>
+          <!--<div class="d-flex ml-4 align-items-end">-->
+          <!--<button>Size guid</button>-->
+          <!--</div>-->
+        </div>
+        <div class="d-flex align-items-center mt-2">
+          <div class="some-bg"></div>
+          <span class="m-1" style="font-size: 0.8em">Free returns</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="some-bg d-inline-block"></div>
+          <span class="m-1" style="font-size: 0.8em">Free delivery</span>
+        </div>
+        <hr>
+        <button style="height: 50px;" (click)="buyNow()" data-toggle="modal" data-target="#ordersModal"
+                class="btn btn-block  buttoBuy text-white"><span style="letter-spacing: 4px;">Buy Now </span></button>
+      </div>
+
+    </div>
+
+    <div class="anyMenu tabsOn">
+      <div (click)="showWriteData($event.target)" class="d-flex pt-4 justify-content-between">
+        <h6 style="letter-spacing: 4px;cursor: pointer;" (click)="showbyText($event.target)">DETAILS</h6>
+        <svg (click)="showbyPhoto($event.target)" xmlns="http://www.w3.org/2000/svg"
+             [ngStyle]="{transform:status?'rotate(180deg)':'rotate(0)'}"
+             style="transition: 0.5s;" width="50" height="40" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+          >
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+        </svg>
+      </div>
+
+      <div class="container forms mt-1" *ngIf="status" style="transition: 0.5s;">
+        <p style="font-size: 0.9em;" class="col-6">{{view?.description}}</p>
+      </div>
+
+      <hr>
+      <div (click)="showWriteData($event.target)" class="d-flex justify-content-between">
+        <h6 style="letter-spacing: 4px;cursor: pointer;" (click)="showbyText($event.target)">SHIPPING INFO</h6>
+        <svg (click)="showbyPhoto($event.target)" id="shipping" xmlns="http://www.w3.org/2000/svg"
+             [ngStyle]="{transform:status1?'rotate(180deg)':'rotate(0)'}"
+             style="transition: 0.5s;margin-left: -25px;" width="50" height="40" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+          >
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+        </svg>
+      </div>
+      <div class="container forms mt-1" *ngIf="status1" style="transition: 0.5s;">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="someImg"></div>
+            <span style="letter-spacing: 4px; margin: 5px; font-size: 0.8em;">UPS PICKUP POINT</span>
+          </div>
+          <p style="font-size: 0.8em;">FREE*</p>
+        </div>
+        <ul class="styleLi">
+          <li style="font-size: 0.9em">1 - 2 business days</li>
+          <li style="font-size: 0.9em">Pickup point delivery</li>
+        </ul>
+        <p style="font-size: 0.9em;margin-bottom: 25px;">*for orders over $35. Otherwise $10</p>
+        <hr>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="someImg"></div>
+            <span style="letter-spacing: 4px; margin: 5px; font-size: 0.8em;">UPS STANDARD</span>
+          </div>
+          <p style="font-size: 0.8em;">FREE*</p>
+        </div>
+        <ul class="styleLi">
+          <li style="font-size: 0.9em">2 - 5 business days</li>
+          <li style="font-size: 0.9em">Home delivery</li>
+        </ul>
+        <p style="font-size: 0.9em;margin-bottom: 25px;">*for orders over $35. Otherwise $10</p>
+        <hr>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="someImg"></div>
+            <span style="letter-spacing: 4px; margin: 5px; font-size: 0.8em;">UPS EXPRESS</span>
+          </div>
+          <p>$15</p>
+        </div>
+        <ul class="styleLi">
+          <li style="font-size: 0.9em">1 - 2 business days</li>
+          <li style="font-size: 0.9em">Home delivery</li>
+        </ul>
+      </div>
+
+      <hr>
+      <div (click)="showWriteData($event.target)" class="d-flex justify-content-between">
+        <h6 style="letter-spacing: 4px;cursor: pointer;" (click)="showbyText($event.target)">PAYMANT OPTIONS</h6>
+        <svg (click)="showbyPhoto($event.target)" id="paymant" xmlns="http://www.w3.org/2000/svg"
+             [ngStyle]="{transform:status2?'rotate(180deg)':'rotate(0)'}"
+             style="transition: 0.5s;margin-left: -75px;" width="50" height="40" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+          >
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+        </svg>
+      </div>
+      <div class="container forms mt-1" *ngIf="status2" style="transition: 0.5s;">
+        <p style="font-size: 0.9em;">Daniel wellington offers secure payment methods and you can choose to pay with
+          Visa, Mastercard, Maestro, American Express, Diners Club International, Paypal or JCB.</p>
+        <ul class="d-flex mt-4 align-items-end justify-content-around">
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/2ewe5eMPSEcIqwoU08QIOA/5d89569ef8dfe251d0b795f76e0163d1/visa-2x.png?ecom2=true&width=80&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/2MIeYuELok46G2wAIU64Ao/dc9ffe7987f1c1654a722a3506199561/mastercard-2x.png?ecom2=true&width=33&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/13q571kpXagKaugiUm8sqA/f292e71009a25c91f46b7a888e5cbccb/maestro-2x.png?ecom2=true&width=64&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/7rjkl2vvIk46uK2ius6Uiy/bd47cf4a76b302d4a39b1176e853a712/amex-2x.png?ecom2=true&width=27&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/3mlTXT3LWMyU8wKQaGm4YQ/26816edd4b522fb95031e74e2e80755d/discover-2x.png"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/3piI2aoGAUOiYQYc0KCw0Y/a9adef44c32c3efe97e34aebbb8feaa5/diners-club-2x.png?ecom2=true&width=74&quality=100"
+            alt=""></li>
+        </ul>
+      </div>
+
+      <hr>
+      <div (click)="showWriteData($event.target)" class="d-flex justify-content-between">
+        <h6 style="letter-spacing: 10px;cursor: pointer;" (click)="showbyText($event.target)">RETURNS</h6>
+        <svg xmlns="http://www.w3.org/2000/svg" id="returns" (click)="showbyPhoto($event.target)"
+             [ngStyle]="{transform:status3?'rotate(180deg)':'rotate(0)'}"
+             style="transition: 0.5s;margin-left: -75px;" width="50" height="40" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+          >
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+        </svg>
+      </div>
+      <div class="container forms mt-1" *ngIf="status3" style="transition: 0.5s;">
+        <p style="font-size: 0.9em;">We offer free returns on all our products. You can return the products you have
+          purchased within 30 days of receiving the item(s) for a full refund.
+
+          Kindly note that items purchased online cannot be returned to a local retail store.
+
+          Read more in our <a style="border-bottom:1px solid black; text-decoration: none;"
+                              [routerLink]="['/user/ret_policy']"> Returns policy</a></p>
+      </div>
+    </div>
+
+
+    <nav class="mt-5 tabsOff">
+      <div class="nav nav-tabs d-flex justify-content-between" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active text-uppercase" (click)="clickTabs($event)" id="nav-home-tab"
+           data-toggle="tab" href="#nav-home" role="tab" style="letter-spacing: 4px" aria-controls="nav-home"
+           aria-selected="true">Details</a>
+        <a class="nav-item nav-link text-uppercase" id="nav-profile-tab" (click)="clickTabs($event)" data-toggle="tab"
+           href="#nav-profile" role="tab" style="letter-spacing: 4px" aria-controls="nav-profile" aria-selected="false">Shipping
+          INFO</a>
+        <a class="nav-item nav-link text-uppercase" id="nav-contact-tab" (click)="clickTabs($event)" data-toggle="tab"
+           href="#nav-contact" role="tab" style="letter-spacing: 4px" aria-controls="nav-contact" aria-selected="false">PAYMENT
+          INFO</a>
+        <a class="nav-item nav-link text-uppercase" id="nav-returns-tab" (click)="clickTabs($event)" data-toggle="tab"
+           href="#nav-returns" role="tab" style="letter-spacing: 4px" aria-controls="nav-returns" aria-selected="false">RETUrns</a>
+      </div>
+    </nav>
+    <div class="tab-content mt-4 tabsOff" id="nav-tabContent">
+      <div class="tab-pane  justify-content-between fade show active" [ngStyle]="{display:status?'flex':'none'}"
+           id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <p style="font-size: 0.9em;" class="col-6">{{view?.description}}</p>
+        <div class="col-6">
+          <div *ngIf="view?.moreInfo.sku" class="d-flex justify-content-between">
+            <p class="p-details">SKU</p>
+            <p class="text-right">{{view?.moreInfo.sku}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.sku">
+
+          <div *ngIf="view?.moreInfo.case_thickness" class="d-flex justify-content-between">
+            <p class="p-details">Case thickness</p>
+            <p class="text-right">{{view?.moreInfo.case_thickness}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.case_thickness">
+          <div *ngIf="view?.moreInfo.dial_Color" class="d-flex justify-content-between">
+            <p class="p-details">Dial Color</p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">{{view?.moreInfo.dial_Color}}</p>
+          </div>
+
+          <hr *ngIf="view?.moreInfo.dial_Color">
+          <div *ngIf="view?.moreInfo.movement" class="d-flex justify-content-between">
+            <p class="p-details">Movement</p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">{{view?.moreInfo.movement}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.movement">
+          <div *ngIf="view?.moreInfo.material" class="d-flex justify-content-between">
+            <p class="p-details">Material</p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">{{view?.moreInfo.material}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.material">
+
+          <div *ngIf="view?.moreInfo.strap_With" class="d-flex justify-content-between">
+            <p class="p-details">Strap width</p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">{{view?.moreInfo.strap_With}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.strap_With">
+
+          <div *ngIf="view?.moreInfo.strap" class="d-flex justify-content-between">
+            <p class="p-details">Strap</p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">{{view?.moreInfo.strap}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.strap">
+
+          <div *ngIf="view?.moreInfo.strap_color" class="d-flex justify-content-between">
+            <p class="p-details">Strap color</p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">{{view?.moreInfo.strap_color}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.strap_color">
+
+          <div *ngIf="view?.moreInfo.Interchangeable_straps" class="d-flex justify-content-between">
+            <p class="p-details">Interchangeable straps</p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">
+              {{view?.moreInfo.Interchangeable_straps}}</p>
+          </div>
+          <hr *ngIf="view?.moreInfo.Interchangeable_straps">
+
+          <div *ngIf="view?.moreInfo.water_resistant" class="d-flex justify-content-between">
+            <p class="p-details">Water resistant </p>
+            <p class="text-right" style="letter-spacing: 0;font-size: 0.8em;">{{view?.moreInfo.water_resistant}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" [ngStyle]="{display:status1?'block':'none'}" id="nav-profile" role="tabpanel"
+           aria-labelledby="nav-profile-tab">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="someImg"></div>
+            <span style="letter-spacing: 4px; margin: 5px; font-size: 0.8em;">UPS PICKUP POINT</span>
+          </div>
+          <p style="font-size: 0.8em;">FREE*</p>
+        </div>
+        <ul class="styleLi">
+          <li style="font-size: 0.9em">1 - 2 business days</li>
+          <li style="font-size: 0.9em">Pickup point delivery</li>
+        </ul>
+        <p style="font-size: 0.9em;margin-bottom: 25px;">*for orders over $35. Otherwise $10</p>
+        <hr>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="someImg"></div>
+            <span style="letter-spacing: 4px; margin: 5px; font-size: 0.8em;">UPS STANDARD</span>
+          </div>
+          <p style="font-size: 0.8em;">FREE*</p>
+        </div>
+        <ul class="styleLi">
+          <li style="font-size: 0.9em">2 - 5 business days</li>
+          <li style="font-size: 0.9em">Home delivery</li>
+        </ul>
+        <p style="font-size: 0.9em;margin-bottom: 25px;">*for orders over $35. Otherwise $10</p>
+        <hr>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="someImg"></div>
+            <span style="letter-spacing: 4px; margin: 5px; font-size: 0.8em;">UPS EXPRESS</span>
+          </div>
+          <p>$15</p>
+        </div>
+        <ul class="styleLi">
+          <li style="font-size: 0.9em">1 - 2 business days</li>
+          <li style="font-size: 0.9em">Home delivery</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" [ngStyle]="{display:status2?'block':'none'}" id="nav-contact" role="tabpanel"
+           aria-labelledby="nav-contact-tab">
+        <p style="font-size: 0.9em;">Daniel wellington offers secure payment methods and you can choose to pay with
+          Visa, Mastercard, Maestro, American Express, Diners Club International, Paypal or JCB.</p>
+        <ul class="d-flex mt-4 align-items-end justify-content-around">
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/2ewe5eMPSEcIqwoU08QIOA/5d89569ef8dfe251d0b795f76e0163d1/visa-2x.png?ecom2=true&width=80&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/2MIeYuELok46G2wAIU64Ao/dc9ffe7987f1c1654a722a3506199561/mastercard-2x.png?ecom2=true&width=33&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/13q571kpXagKaugiUm8sqA/f292e71009a25c91f46b7a888e5cbccb/maestro-2x.png?ecom2=true&width=64&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/7rjkl2vvIk46uK2ius6Uiy/bd47cf4a76b302d4a39b1176e853a712/amex-2x.png?ecom2=true&width=27&quality=100"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/3mlTXT3LWMyU8wKQaGm4YQ/26816edd4b522fb95031e74e2e80755d/discover-2x.png"
+            alt=""></li>
+          <li class="myLi"><img
+            src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/3piI2aoGAUOiYQYc0KCw0Y/a9adef44c32c3efe97e34aebbb8feaa5/diners-club-2x.png?ecom2=true&width=74&quality=100"
+            alt=""></li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" [ngStyle]="{display:status3?'flex':'none'}" id="nav-returns" role="tabpanel"
+           aria-labelledby="nav-returns-tab">
+        <p style="font-size: 0.9em;">We offer free returns on all our products. You can return the products you have
+          purchased within 30 days of receiving the item(s) for a full refund.
+
+          Kindly note that items purchased online cannot be returned to a local retail store.
+
+          Read more in our <a style="border-bottom:1px solid black; text-decoration: none;"
+                              [routerLink]="['/user/ret_policy']"> Returns policy</a></p>
+      </div>
+    </div>
+  </div>
+  <div style="margin: 6rem;">
+    <!-- You can now use your library component in app.component.html -->
+    <!--<ngx-slick-carousel class="carousel"-->
+                        <!--#slickModal="slick-carousel"-->
+                        <!--[config]="slideConfig"-->
+                        <!--(init)="slickInit($event)"-->
+                        <!--(breakpoint)="breakpoint($event)"-->
+                        <!--(afterChange)="afterChange($event)"-->
+                        <!--(beforeChange)="beforeChange($event)">-->
+      <!--<div ngxSlickItem *ngFor="let slide of slides" class="slide">-->
+        <!--<img [src]=[slide] alt="">-->
+      <!--</div>-->
+    <!--</ngx-slick-carousel>-->
+  </div>
+  <div class="tabsOff" style="height: 150px;"></div>
+  <div class="tabsOn" style="height: 75px;"></div>
+</div>

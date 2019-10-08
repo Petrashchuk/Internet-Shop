@@ -1,0 +1,169 @@
+* {
+  font-family: 'Rokkitt', serif;
+}
+
+.for-product {
+  background-color: white;
+  box-shadow: 0 10px 20px lightgrey;
+  margin-left: 45px;
+}
+
+li {
+  margin-left: 1.5em;
+}
+
+.forms {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 10px 20px lightgrey;
+  animation: slowShow 0.5s ease-in;
+}
+
+@keyframes slowShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buttoBuy {
+  background-color: rgb(0, 8, 28);
+}
+
+.buttoBuy:hover {
+  background-color: rgb(39, 55, 81);
+  border-color: rgb(39, 55, 81);
+}
+
+button[disabled]:hover{
+  background-color: rgb(0, 8, 28);
+}
+
+.buttoBuy span {
+  color: white;
+}
+
+.someImg {
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/4Fj2waZXgjzYLyM1vxOW8L/c7f3961f85d545c07d1ccfd167bb24b3/Shipping_UPS.svg");
+  height: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin: 5px 15px;
+  background-size: contain;
+}
+
+.styleLi {
+  list-style: none;
+  margin-left: 70px;
+}
+
+.custom-control-label:before {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: green;
+  width: 25px;
+  height: 25px;
+  margin: -2px;
+}
+
+.custom-control-label::after {
+  padding: 12.5px;
+}
+li:nth-of-type(1){
+  width: 200px;
+}
+.posFix {
+  position: fixed;
+  top: 85px;
+  z-index: 1000;
+  right: 0;
+}
+
+.posNorm {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.hrT{
+  height: 0.5px;
+  background-color: #edece8;
+  width: 100%;
+}
+
+.ps{
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: green;
+  background-color:green;
+}
+.custom-control-input:checked ~ .custom-control-label::after{
+  background-position: 4px 4px;
+}
+
+//.paymentCheck{
+//  width: 75%;
+//  text-align: center;
+//}
+.lastBtn{
+  background-color: rgb(0, 8, 28);
+  color: #cdbc7a;
+  height: 50px;
+}
+.linka{
+  color: black;
+  border-bottom:1px solid black;
+  text-decoration: none;
+}
+.mmm{
+  width: 63%;
+  margin-left: 1.5%;
+}
+svg{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .main-block{
+    display: block!important;
+  }
+  .posFix{
+    position: relative!important;
+    max-width: 100%;
+  }
+  .for-product{
+    margin-left:0;
+    z-index: 0;
+    right: 0;
+    top: 0;
+  }
+  .onlyh{
+    height: 150px!important;
+  }
+  .mmm{
+    width: 100%;
+    margin-left: auto!important;
+  }
+  .posNorm{
+    position: static!important;
+    margin-left: auto!important;
+  }
+}
+@media screen and (max-width: 510px){
+  .th6{
+    margin-top: 70px;
+  }
+
+}

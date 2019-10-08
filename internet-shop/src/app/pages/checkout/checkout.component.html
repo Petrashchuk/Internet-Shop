@@ -1,0 +1,231 @@
+<div class="container">
+  <div style="height: 200px;" class="d-flex onlyh align-items-center justify-content-center">
+    <h6 style="letter-spacing: 4px; font-size: 48px;" class="th6">CHECKOUT</h6>
+  </div>
+
+  <div class="d-flex flex-column-reverse position-relative ">
+    <div class="col-12 col-md-8">
+      <ol style="width: 100%;">
+        <hr>
+        <div (click)="showWriteData($event)" class="d-flex justify-content-between">
+          <li (click)="showbyText($event.target)" style="letter-spacing: 4px; font-size: 28px; cursor: pointer;">THE BASICS</li>
+          <svg (click)="showbyPhoto($event.target)" id="basics" xmlns="http://www.w3.org/2000/svg"
+               [ngStyle]="{transform:show?'rotate(180deg)':'rotate(0)'}"
+               style="transition: 0.5s;" width="50" height="40" viewBox="0 0 24 24">
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            <path fill="none" d="M0 0h24v24H0V0z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="container forms mt-5" *ngIf="show" style="transition: 0.5s;">
+            <h4 class="text-center pt-5" style="letter-spacing: 3px">YOUR ADDRESS</h4>
+            <form [formGroup]="myForm">
+              <div class="form-group">
+                <label for="InputEmail">EMAIL *</label>
+                <input type="text" class="form-control" name="email" formControlName="email" id="InputEmail"
+                       aria-describedby="emailHelp"
+                       placeholder="Enter email">
+                <div style="color: red;"
+                     *ngIf="myForm.controls['email'].invalid && myForm.controls['email'].touched ">
+                  * this field is required
+                </div>
+              </div>
+              <div class="d-flex">
+                <div style="padding-left: 0!important;" class="form-group col-6">
+                  <label for="fname">FIRST NAME *</label>
+                  <input type="text" class="form-control" name="fname" formControlName="fname" id="fname">
+                  <div style="color: red;"
+                       *ngIf="myForm.controls['fname'].invalid && myForm.controls['fname'].touched">
+                    * this field is required
+                  </div>
+                </div>
+                <div style="padding-right: 0!important;" class="form-group col-6">
+                  <label for="lname">LAST NAME *</label>
+                  <input type="text" class="form-control" name="lname" formControlName="lname" id="lname">
+                  <div style="color: red;"
+                       *ngIf="myForm.controls['lname'].invalid && myForm.controls['lname'].touched">
+                    * this field is required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phNumber">PHONE NUMBER *</label>
+                <input maxlength="10" type="text" class="form-control" name="phone_number"
+                       formControlName="phone_number"
+                       id="phNumber">
+                <div style="color: red;"
+                     *ngIf="myForm.controls['phone_number'].invalid && myForm.controls['phone_number'].touched">
+                  * this field is required
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address1">ADRESS 1 *</label>
+                <input type="text" class="form-control" name="address1" formControlName="address1" id="address1">
+                <div style="color: red;"
+                     *ngIf="myForm.controls['address1'].invalid && myForm.controls['address1'].touched">
+                  * this field is required
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address2">ADRESS 2 *</label>
+                <input type="text" class="form-control" name="address2" formControlName="address2" id="address2">
+                <div style="color: red;"
+                     *ngIf="myForm.controls['address2'].invalid && myForm.controls['address2'].touched">
+                  * this field is required
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div style="padding-left: 0!important;" class="form-group col-6">
+                  <label for="city">CITY *</label>
+                  <input type="text" class="form-control" name="city" formControlName="city" id="city">
+                  <div style="color: red;"
+                       *ngIf="myForm.controls['city'].invalid && myForm.controls['city'].touched">
+                    * this field is required
+                  </div>
+                </div>
+                <div style="padding-right: 0!important;" class="form-group col-6">
+                  <label for="zCode">ZIP CODE *</label>
+                  <input type="text" class="form-control" name="zCode" formControlName="zipCode" id="zCode">
+                  <div style="color: red;"
+                       *ngIf="myForm.controls['zipCode'].invalid && myForm.controls['zipCode'].touched">
+                    * this field is required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <ng-select [items]="country$"
+                           formControlName="country"
+                           autofocus
+                           [(ngModel)]="selectedCountry">
+                </ng-select>
+              </div>
+              <div class="d-flex justify-content-center pb-4">
+                <button [disabled]="myForm.invalid" style="height: 50px; width: 60%;letter-spacing: 4px;"
+                        (click)="buyNow()"
+                        class="btn btn-block  buttoBuy text-white"><span style="letter-spacing: 4px;color: #cdbc7a;">CONTINUE</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr>
+        <div (click)="showWriteData($event)" class="d-flex justify-content-between">
+          <li (click)="showbyText($event.target)" style="letter-spacing: 4px; font-size: 28px; cursor: pointer;">DELIVERY</li>
+          <svg (click)="showbyPhoto($event.target)" id="delivery" xmlns="http://www.w3.org/2000/svg"
+               [ngStyle]="{transform:show1?'rotate(180deg)':'rotate(0)'}"
+               style="transition: 0.5s;" width="50" height="40" viewBox="0 0 24 24">
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            >
+            <path fill="none" d="M0 0h24v24H0V0z"/>
+          </svg>
+        </div>
+        <div class="container forms mt-5" *ngIf="show1" style="transition: 0.5s;">
+          <div class="d-flex align-items-center justify-content-between p-4">
+
+            <div class="d-flex">
+              <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input (change)="deliveryHome($event.target)" [disabled]="afterFirstStep" value="Home Delivery"
+                       type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline"></label>
+              </div>
+              <div class="someImg"></div>
+              <span style="letter-spacing: 4px; margin: 10px -10px; font-size: 0.8em;">UPS EXPRESS</span>
+            </div>
+            <p style="font-size: 0.8em">+ $0</p>
+          </div>
+          <ul class="styleLi d-flex">
+            <li style="font-size: 0.9em; margin-left:0;">2 - 3 business days.</li>
+            <li style="font-size: 0.9em; margin-left:5px;">Home delivery</li>
+          </ul>
+          <div class="d-flex justify-content-center p-4">
+            <button [disabled]="afterFirstStep" style="height: 50px; width: 60%;letter-spacing: 4px;"
+                    (click)="delivery()"
+                    class="btn btn-block  buttoBuy text-white"><span style="letter-spacing: 4px;color: #cdbc7a;">CONTINUE</span>
+            </button>
+          </div>
+        </div>
+        <hr>
+        <div (click)="showWriteData($event)" style="transition: 0.5s;" class="d-flex justify-content-between">
+          <li (click)="showbyText($event.target)" style="letter-spacing: 4px; font-size: 28px; cursor: pointer">PAYMANT</li>
+          <svg (click)="showbyPhoto($event.target)" id="paymant" xmlns="http://www.w3.org/2000/svg" width="50"
+               height="40"
+               [ngStyle]="{transform:show2?'rotate(180deg)':'rotate(0)'}" style="transition: 0.5s;" viewBox="0 0 24 24">
+            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            <path fill="none" d="M0 0h24v24H0V0z"/>
+          </svg>
+        </div>
+        <div class="container forms mt-5" *ngIf="show2" style="transition: 0.5s;">
+          <div class="container forms mt-5" *ngIf="show2" style="transition: 0.5s;">
+            <div class="d-flex align-items-center justify-content-around p-4">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input [disabled]="checkIfcheckDelivey" (change)="paymant($event.target)" value="by_card" type="radio"
+                       id="by_card" name="paymant"
+                       class="custom-control-input ">
+                <label class="custom-control-label" for="by_card">By card</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input [disabled]="checkIfcheckDelivey" (change)="paymant($event.target)" value="upon_receipt"
+                       type="radio" id="upon_receipt"
+                       name="paymant" class="custom-control-input ">
+                <label class="custom-control-label" for="upon_receipt">Upon_receipt</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </ol>
+    </div>
+    <div (scroll)="scrollHandler($event)" [ngClass]="addBlock?'posFix':'posNorm'" class="for-product col-12 col-md-4">
+      <ng-container *ngIf="showOrders">
+        <div class="d-flex  mt-5 mb-4" *ngFor="let product of getProduct;">
+          <div class="ImgMy">
+            <img style="width: 70px;" [src]="product?.img" alt="">
+          </div>
+          <div class="info">
+            <h5>{{product?.name}}</h5>
+            <span style="letter-spacing: 2px;font-size: 0.9em;">{{product?.count}}</span><span
+            style="letter-spacing: 2px;font-size: 0.9em;" class="ml-1">x</span><span
+            style="letter-spacing: 2px;font-size: 0.9em;" class="ml-1" style="margin-top: 10px;font-size: 0.8em;">{{product?.price|currency}}</span>
+            <p style="font-size: 0.8em; letter-spacing: 3px;">{{product?.size || product?.anotherSize}}MM</p>
+          </div>
+        </div>
+        <hr>
+        <div>
+          <div style="color: rgb(151, 151, 151);" class="d-flex  justify-content-between">
+            <p style="letter-spacing: 2px">TAX</p>
+            <p>{{tax|currency}}</p>
+          </div>
+          <div class="hrT"></div>
+          <div style="height: 0.5px;background-color: #edece8;"></div>
+          <div class="mt-3 d-flex justify-content-between">
+            <p style="letter-spacing: 2px">GRAND TOTAL</p>
+            <p>{{totalPrice|currency}}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="  mmm">
+    <div>
+      <div class="custom-control ddd d-inline-block custom-checkbox my-1 mr-sm-2">
+        <input (change)="myCheckNews($event.target)"
+               type="checkbox" class="custom-control-input" id="subscribeNews">
+        <label class="custom-control-label" for="subscribeNews"></label>
+      </div>
+      <label for="subscribeNews" class="d-inline-block" style="font-size: 0.8em;">SUBSCRIBE TO OUR NEWSLETTER</label>
+      <p style="font-size: 0.7em;">Get the latest news and be the first to know about exclusive offers.
+        By signing up, I confirm that (i) I am 16 years or older, (ii) I want to receive personalized marketing material
+        through email other electronic communication, and (iii) I have read Daniel Wellington’s <a class="linka"
+                                                                                                   [routerLink]="['/user/privacy_policy']">Privacy
+          Policy</a></p>
+      <div class="paymentCheck">
+        <button [disabled]="mustHaveLengthCheck" (click)="sendOrders()" class="btn lastBtn col-12"
+                style="letter-spacing: 4px; ">Payment Check
+        </button>
+      </div>
+    </div>
+  </div>
+  <div style="height: 50px;"></div>
+
+</div>

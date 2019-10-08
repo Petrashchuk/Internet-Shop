@@ -1,0 +1,27 @@
+
+<div style="height: 50px;"></div>
+<div class="d-flex someW flex-wrap justify-content-center">
+<div  class="position-relative" [routerLink]="['/user/products',product.id]"
+     *ngFor="let product of newsProduct;let i=index" hover
+     class="rounded  col-12 col-sm-3 m-4">
+  <p class="news" style="letter-spacing: 3px;">New</p>
+  <div class="text-center mt-2"><img [src]="product.img" width="250px" height="250px" alt=""></div>
+  <p class="lt text-center font-weight-normal">{{product.name}}</p>
+  <div class="d-flex justify-content-center">
+    <p class="lt cl1 mr-1 font-weight-normal text-center" *ngIf="product.size">{{product.size}}мм</p>
+    <p style="font-size: 0.9em;" class="text-center" *ngIf="product.anotherSize && product.size"> | </p>
+    <p class="anCl cl ml-1 text-center " [ngStyle]="{color:product.size?'gainsboro':'black'}"
+       *ngIf="product.anotherSize">
+      {{product.anotherSize}}мм</p>
+  </div>
+  <p class="lt text-center text-dark  font-weight-bold">{{product.price|currency}} </p>
+  <hr>
+</div>
+</div>
+
+
+
+
+
+
+<div style="height: 50px;"></div>

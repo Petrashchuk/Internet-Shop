@@ -1,0 +1,80 @@
+<div class="container text-center mt-5">
+  <table class="table table-striped table-light">
+    <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>email</th>
+      <th>First_name</th>
+      <th>Last_name</th>
+      <th>Phone_number</th>
+      <th>Image</th>
+      <th>Size</th>
+      <th>Date</th>
+      <th>More Details</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of order; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{product.address.email}}</td>
+      <td>{{product.address.fname}}</td>
+      <td>{{product.address.lname}}</td>
+      <td>{{product.address.phone_number}}</td>
+      <td><img [src]="product.img" width="50px"></td>
+      <td>{{product.size||product.anotherSize}}mm</td>
+      <td>{{product.address.date|date:'short'}}</td>
+      <td>
+        <button type="button" class="btn btn-info" (click)="moreDetails(product)" data-toggle="modal"
+                data-target="#moreDetails">More Details
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="modal fade" id="moreDetails" tabindex="-1" role="dialog" aria-labelledby="moreDetailsLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="moreDetails">More Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-wrap" >
+          <p><span class="font-weight-bold">City:</span> {{product?.address.city}};</p>
+          <p class="ml-1"><span class="font-weight-bold">Country: </span>{{product?.address.country}}</p>
+        </div>
+
+        <div class="d-flex">
+          <p *ngIf="product?.size"><span class="font-weight-bold">Size:</span> {{product?.size}}mm; </p>
+          <p class="ml-1" *ngIf="product?.anotherSize"><span class="font-weight-bold">Size:</span>
+            {{product?.anotherSize}}mm;</p>
+        </div>
+        <p><span class="font-weight-bold">Count:</span>{{product?.count}}</p>
+        <p><span class="font-weight-bold">Price:</span> {{product?.price|currency}}</p>
+        <p><span class="font-weight-bold">Paymant:</span> {{product?.paymant}}</p>
+        <p><span class="font-weight-bold">Sex:</span> {{product?.sex}}</p>
+        <p><span class="font-weight-bold">Delivery:</span> {{product?.delivery}}</p>
+        <h5 class="text-center">Information about product:</h5>
+        <div>
+          <p><span class="font-weight-bold">Sku: </span>{{product?.moreInfo.sku}}</p>
+          <p><span class="font-weight-bold">Strap: </span>{{product?.moreInfo.strap}}</p>
+          <p><span class="font-weight-bold">Strap color: </span>{{product?.moreInfo.strap_color}}</p>
+          <p><span class="font-weight-bold">Strap width: </span>{{product?.moreInfo.strap_With}}</p>
+          <p><span class="font-weight-bold">Material: </span>{{product?.moreInfo.material}}</p>
+          <p><span class="font-weight-bold">Movement: </span>{{product?.moreInfo.movement}}</p>
+          <p><span class="font-weight-bold">Case thickness: </span>{{product?.moreInfo.case_thickness}}</p>
+          <p><span class="font-weight-bold">Adjustable length: </span>{{product?.moreInfo.adjustable_length}}</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

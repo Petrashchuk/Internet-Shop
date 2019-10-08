@@ -1,0 +1,35 @@
+* {
+  font-family: 'Rokkitt', serif;
+}
+
+.for-p {
+  letter-spacing: 2px;
+}
+
+.img {
+  background-image: url("https://www.danielwellington.com/media/staticbucket/media/catalog/product/b/o/box-dapper-durham-rg-38.png");
+  width: 30%;
+  background-size: contain;
+  height: 200px;
+  transform: rotate(50deg);
+  background-repeat: no-repeat;
+  right: 5px;
+  top: 25px;
+  background-position: 9px -17px;
+}
+
+@media screen and (max-width: 540px) {
+  .for-p {
+    font-size: 0.8em !important;
+  }
+}
+
+.img {
+  display: none;
+}
+
+@media screen and (min-width: 1310px) {
+  .img {
+    display: block;
+  }
+}

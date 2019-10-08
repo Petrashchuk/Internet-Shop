@@ -1,0 +1,61 @@
+<div class=" d-flex flex-wrap justify-content-center container-fluid mt-5"  >
+  <h4 *ngIf="mensWatchClassic.length" class="text-center w-100" style="letter-spacing: 4px;">CLASSIC</h4>
+  <h6 *ngIf="mensWatchClassic.length" class="text-center w-100" style="letter-spacing: 4px;">{{mensWatchClassic.length}} Products</h6>
+  <ng-container *ngIf="mensWatchClassic.length">
+  <div  [routerLink]="['/user/products',product.id]"
+       *ngFor="let product of mensWatchClassic;let i=index" hover
+       class="rounded col-12 col-sm-3 m-4">
+    <div class="text-center mt-2"><img [src]="product.img" width="250px" height="250px" alt=""></div>
+    <p class="lt text-center font-weight-normal">{{product.name}}</p>
+    <div class="d-flex justify-content-center">
+      <p class="lt cl1 mr-1 font-weight-normal text-center" *ngIf="product.size">{{product.size}}мм</p>
+      <p style="font-size: 0.9em;" class="text-center" *ngIf="product.anotherSize && product.size"> | </p>
+      <p class="anCl cl ml-1 text-center " [ngStyle]="{color:product.size?'gainsboro':'black'}"
+         *ngIf="product.anotherSize">
+        {{product.anotherSize}}мм</p>
+    </div>
+    <p class="lt text-center text-dark  font-weight-bold">{{product.price|currency}} </p>
+    <hr>
+  </div>
+  </ng-container>
+
+  <h4 *ngIf="mensWatchClassicPetite.length" class="text-center w-100" style="letter-spacing: 4px;">CLASSIC PETITE</h4>
+  <h6 *ngIf="mensWatchClassicPetite.length" class="text-center w-100" style="letter-spacing: 4px;">{{mensWatchClassicPetite.length}} Products</h6>
+  <ng-container *ngIf="mensWatchClassicPetite.length">
+  <div  [routerLink]="['/user/products',product.id]"
+       *ngFor="let product of mensWatchClassicPetite;let i=index" hover
+       class="rounded col-12 col-sm-3 m-4">
+    <div class="text-center mt-2"><img [src]="product.img" width="250px" height="250px" alt=""></div>
+    <p class="lt text-center font-weight-normal">{{product.name}}</p>
+    <div class="d-flex justify-content-center">
+      <p class="lt cl1 mr-1 font-weight-normal text-center" *ngIf="product.size">{{product.size}}мм</p>
+      <p style="font-size: 0.9em;" class="text-center" *ngIf="product.anotherSize && product.size"> | </p>
+      <p class="anCl cl ml-1 text-center " [ngStyle]="{color:product.size?'gainsboro':'black'}"
+         *ngIf="product.anotherSize">
+        {{product.anotherSize}}мм</p>
+    </div>
+    <p class="lt text-center text-dark  font-weight-bold">{{product.price|currency}} </p>
+    <hr>
+  </div>
+  </ng-container>
+
+  <h4 *ngIf="mensWatchCDapper.length" class="text-center w-100" style="letter-spacing: 4px;">DAPPER</h4>
+  <h6 *ngIf="mensWatchCDapper.length" class="text-center w-100" style="letter-spacing: 4px;">{{mensWatchCDapper.length}} Products</h6>
+  <ng-container *ngIf="mensWatchCDapper.length">
+  <div  [routerLink]="['/user/products',product.id]"
+       *ngFor="let product of mensWatchCDapper;let i=index" hover
+       class="rounded col-12 col-sm-3 m-4">
+    <div class="text-center mt-2"><img [src]="product.img" width="250px" height="250px" alt=""></div>
+    <p class="lt text-center font-weight-normal">{{product.name}}</p>
+    <div class="d-flex justify-content-center">
+      <p class="lt cl1 mr-1 font-weight-normal text-center" *ngIf="product.size">{{product.size}}мм</p>
+      <p style="font-size: 0.9em;" class="text-center" *ngIf="product.anotherSize && product.size"> | </p>
+      <p class="anCl cl ml-1 text-center " [ngStyle]="{color:product.size?'gainsboro':'black'}"
+         *ngIf="product.anotherSize">
+        {{product.anotherSize}}мм</p>
+    </div>
+    <p class="lt text-center text-dark  font-weight-bold">{{product.price|currency}} </p>
+    <hr>
+  </div>
+  </ng-container>
+</div>

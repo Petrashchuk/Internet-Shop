@@ -1,0 +1,538 @@
+* {
+  font-family: 'Rokkitt', serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+.fixedClass {
+  position: fixed;
+  top: 0;
+  padding-top: 40px;
+  background-color: rgba(0, 14, 54, 1) !important;
+  width: 100%;
+  z-index: 10;
+}
+
+.height {
+  height: 0%;
+}
+
+.a-shka {
+  color: white !important;
+}
+
+.for-class {
+  position: fixed;
+  fill: white;
+}
+
+ul:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px 40px;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  position: relative;
+  transition: .3s;
+  color: #262626;
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: bisque;
+  top: 120%;
+  transform: scale(0) skew(10deg);
+  transition: 1s cubic-bezier(.43, 1.91, .35, .74);
+  z-index: -1;
+}
+
+//ul li a:after{
+//  content: '';
+//  position: absolute;
+//  width: 50px;
+//  height: 50px;
+//  background-color:rgba(0,0,0,.1);
+//  transform-style: preserve-3;
+//  transform: translate(-50%,-50%) scale(0);
+//  transition: 1.5s cubic-bezier(.43,1.91,.35,.74);
+//  z-index: -1;
+//  border-radius: 50%;
+//  top: 50%;
+//  left: 50%;
+//}
+ul li:hover a:before {
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+ul li:hover a:after {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 100;
+}
+
+//ul li:hover a{
+//  color: #fff;
+//}
+
+.for-svg {
+  width: 25px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.for-nav {
+  background-color: rgba(0, 8, 28, 0.3);
+  font-family: 'IM Fell DW Pica SC', serif;
+  height: 4rem;
+}
+
+.backHome {
+  height: 107%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/1PbPZ53MrQLmN1b1hpvmK3/644a9612bd51f8564df24c5a0d7a5d90/lp-dover-2800x850.jpg");
+  //background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/68pfFdxWe8Ya37TQyCoDTJ/e2ada1f89d53a14889d204aaa0cfdadf/Dover_2800x800px_desktop_FOR_HER.jpg");
+}
+
+.backWatch {
+  height: 107%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/AWTsNjJgdodyLXwSqpTdw/32d596d93142cb7b79db8313d85789d8/all_watches_2800x850px.jpg");
+}
+
+.backSizeInfo {
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/3P7GUgiqgosWsIOCak6icQ/fb48ffaf93bbe0dc557e271ac26819dd/new-size-information-desk.jpg");
+  height: 122%;
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backAbout {
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/68aSxwRRLt0apFBWHzfiXT/26c006ab521fb5063b258d61885cbf74/About_us2800x850px.jpg");
+  height: 122%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backContact {
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/6kqJuVbPTUsCksEeoEQIow/0dba67cea380604e551d2acbf6a7c461/dapper-2800x960.jpg");
+  //background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/7gBipZlT4vtFxz9vWKjMMK/774091d50009500da11f9e3f10ab7221/cuff_2800x850.jpg");
+  height: 122%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.backProductDetails {
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/5LH6qJRNbAfbo1jpOGMOJy/3b8c060564517a3902bf24dcd98d75b8/lp_drew-bora_2800x1100px.jpg");
+  height: 138%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.backMens {
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/RPtw5M0o1Ia64MPBH1cSM/f3d6dc0f39e2e974a24fe436bb87de77/Dover_2800x800px_desktop_FOR_HIM.jpg");
+  height: 107%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backWomens {
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/68pfFdxWe8Ya37TQyCoDTJ/e2ada1f89d53a14889d204aaa0cfdadf/Dover_2800x800px_desktop_FOR_HER.jpg");
+  height: 107%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backCheckOut {
+  background: rgba(0, 14, 34, 0.8);
+  height: 80px !important;
+  position: fixed;
+  top: 0;
+
+  z-index: 1000;
+  width: 100%;
+}
+
+.dropright .dropdown-menu {
+  top: -10px;
+  left: 120%;
+}
+
+.backAnother {
+  height: 100%;
+  margin-top: -95px;
+  color: white !important;
+}
+
+.backHere {
+  height: 60px;
+}
+
+.withoutMrg {
+  margin-top: 80px;
+}
+
+.forStaticHeight {
+  height: 434px;
+}
+
+.title {
+  font-size: 92px;
+  margin-top: -25px;
+  font-family: 'IM Fell DW Pica SC', serif;
+}
+
+a {
+  color: #262626 !important;
+  letter-spacing: 3px;
+}
+
+li:hover a {
+  color: whitesmoke !important;
+}
+
+.arrived {
+  height: 50px;
+  //margin-left: 0!important;
+  //margin-right: 0!important;
+  width: 99.8vw;
+  background-color: rgba(0, 8, 28, 0.1);
+}
+
+.for-svg-air {
+  width: 65px;
+  margin-top: -5px;
+}
+
+span {
+  margin-left: 15px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.abv {
+  font-size: 72px;
+  left: 5px;
+  top: 5px;
+}
+ul {
+  margin-top: -20px;
+}
+
+.mrgTop, .mrgTop1, .mrgTop3, .mrgTop2 {
+  margin-top: 30px;
+}
+
+.mrgTopMore {
+  margin-top: 95px;
+}
+
+.mrgTop5 {
+  margin-top: 90px;
+}
+
+.mrgTop4 {
+  margin-top: 163px;
+}
+
+.newDrop:hover > .dropdown-menu {
+  display: block;
+}
+
+.newDrop > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.heightAnother {
+  height: 50px;
+}
+
+#myDiv {
+  width: 400px;
+  text-align: center;
+  height: 100px;
+  background-color: rgba(36, 34, 37, 0.5);
+}
+
+.for-btn {
+  display: flex;
+  height: 75%;
+  align-items: flex-end;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.btn-div:hover {
+  color: white;
+  background-color: black;
+}
+
+.dots {
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  color: white;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showWD{
+  display: none;
+}
+.a-a{
+  color: lavender!important;
+}
+
+.goToCheck {
+  background-color: rgb(0, 8, 28) !important;
+}
+.goToCheck:hover {
+  background-color: rgb(39, 55, 81);
+  border-color: rgb(39, 55, 81);
+}
+
+.goToCheck span {
+  color: rgb(205, 188, 122);
+}
+
+.anotherMenu {
+  background-color: rgba(0, 8, 28, 0.3) !important;
+}
+
+.textD{
+  display: none;
+}
+
+.for-nav {
+  display: none;
+}
+
+.anotherA-shka {
+  color: white !important;
+}
+
+.anotherNav {
+  background-color: #000e36 !important;
+}
+
+.cremabtn {
+  background-color: lavender;
+  opacity: 0.8;
+}
+.for-h4 {
+  letter-spacing: 5px;
+}
+
+.for-h1-info {
+  font-size: 46px;
+}
+
+.all-info-block {
+  height: 60%;
+}
+.row{
+  margin-left: -15px!important;
+}
+@media screen and (min-width: 1179px){
+  .row{
+  margin-left: -13px!important;
+  }
+}
+
+@media screen and (max-width: 1296px){
+  .row{
+    margin-left: -14px!important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .mediaNav {
+    display: none!important;
+  }
+  .for-nav {
+    display: block;
+  }
+}
+.main-block-info {
+  width: 40%;
+}
+
+@media screen and (max-width:1296px){
+
+}
+
+@media screen and (max-width: 768px){
+  .arrived {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    width: 100vw;
+  }
+  .row{
+    margin-left: -16px!important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .textShow{
+    display: none!important;
+  }
+  .textD{
+    display: block!important;
+  }
+  .showWD{
+    display: block;
+  }
+  .main-block-home {
+    display: none;
+  }
+   .main-block-info {
+    display: none;
+  }
+  .mediaNav {
+    display: block;
+  }
+  .tt{
+    background-color: #cdbc7a !important;
+  }
+}
+
+@media screen and (max-width: 510px){
+  .arr{
+    display: none!important;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .contback{
+    font-size: 0.7em!important;
+  }
+}
+
+.wrapp{
+  height: 400px;
+  overflow:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.animated-icon1, .animated-icon2, .animated-icon3 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon1 p, .animated-icon2 p, .animated-icon3 p {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.animated-icon1 p {
+  background: #cdbc7a;
+}
+
+
+.animated-icon1 p:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon1 p:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon1 p:nth-child(3) {
+  top: 20px;
+}
+.open p:nth-child(1) {
+  top: 11px;
+  transform: rotate(135deg);
+}
+
+ .open p:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+ .open p:nth-child(3) {
+  top: 11px;
+  transform: rotate(-135deg);
+}
+/* Icon 3*/

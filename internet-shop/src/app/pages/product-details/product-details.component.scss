@@ -1,0 +1,213 @@
+*{
+  font-family: 'Rokkitt', serif;
+}
+p{
+  letter-spacing: 2px;
+}
+.carts{
+  border: 2px solid black;
+}
+.br-color{
+  width: 100px;
+  height: 50px;
+  font-size: 22px;
+  margin: 20px;
+  border-radius: 20px;
+  font-style: italic;
+}
+.br-color:hover{
+  background-color: lightskyblue;
+  transition: 1s;
+  box-shadow: 0 0 25px blue;
+}
+.cnt{
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttoBuy{
+  background-color: rgb(0, 8, 28);
+}
+.buttoBuy:hover{
+  background-color: rgb(39, 55, 81);
+  border-color: rgb(39, 55, 81);
+}
+.buttoBuy span{
+  color: rgb(205, 188, 122);
+}
+.p-details{
+  font-size: 0.8em;
+  letter-spacing: 0px;
+  color: rgb(151, 151, 151);
+}
+.bg-c2{
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  margin-left: 10px;
+}
+.bg-c1{
+  width: 40px;
+  height: 40px;
+  background-color: bisque;
+}
+.for-size{
+  height: 40px;
+  width: 120px;
+}
+.some-bg{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(104, 117, 147);
+}
+.borderMy{
+  border: 1px solid black;
+}
+.btnSize{
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  height: 100%;
+}
+.btnSize:hover{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+.btnSizeActive{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+a{
+  color: black;
+  font-size: 0.9em;
+}
+.myLi{
+  list-style: none;
+}
+.styleLi{
+  margin-left: 50px;
+}
+.someImg{
+  background-image: url("https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/4Fj2waZXgjzYLyM1vxOW8L/c7f3961f85d545c07d1ccfd167bb24b3/Shipping_UPS.svg");
+  height: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  background-size: contain;
+}
+svg{
+  width: 20px!important;
+  height: 20px!important;
+  cursor: pointer;
+}
+.tabsOn{
+  display: none;
+}
+
+.tabsOff{
+  display: block;
+}
+ul li img{
+  width: 60px!important;
+  padding: 10px 10px;
+  height: 40px!important;
+}
+
+
+@media screen and(max-width:768px){
+  .dl{
+    display: block!important;
+  }
+  img{
+    width: 400px!important;
+    height: 400px!important;
+  }
+  .col-6{
+    max-width: 100%;
+  }
+}
+
+@media screen and(max-width:437px){
+  .dl{
+    display: block!important;
+  }
+  img{
+    width: 300px!important;
+    height: 300px!important;
+  }
+  .col-6{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 663px) {
+  .tabsOff{
+    display: none;
+  }
+  .tabsOn{
+    display: block;
+  }
+}
+@media screen and (max-width: 992px){
+  h4{
+    font-size: 1.2em!important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-slider {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  //background: #000;
+}
+
+.nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 100px !important;
+}
+
+.prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.prev-slide {
+  background:no-repeat scroll 0 0;
+  left: -33px;
+}
+
+.next-slide {
+  background: no-repeat scroll -24px 0px;
+  right: -33px;
+}
+
+//.prev-slide:hover {
+//  background-position: 0px -53px;
+//}
+//
+//.next-slide:hover {
+//  background-position: -24px -53px;
+//}
+.slide{
+  text-align: center;
+}

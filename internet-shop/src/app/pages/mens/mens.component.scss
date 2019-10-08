@@ -1,0 +1,71 @@
+.anCl:hover{
+  color: black;
+}
+.cl{
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+.cl1{
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+*{
+  font-family: 'Rokkitt', serif;
+}
+
+
+@media screen and (max-width: 851px) {
+  img {
+    width: 165px !important;
+    height: 200px !important;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  img {
+    width: 150px !important;
+    margin-left: -10px;
+    height: 150px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    width: 110px!important;
+    height: 110px!important;
+    margin-left: -25px!important;
+  }
+}
+@media screen and (min-width: 510px) and (max-width:594px ){
+  img {
+    margin-left: -25px;
+  }
+}
+
+@media screen and (max-width: 740px){
+  img{
+    height: 185px!important;
+    margin-left: -2px!important;
+    width: 155px!important;
+  }
+}
+
+@media screen and (max-width: 540px){
+  img{
+    margin-left: -27px!important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    width: 250px!important;
+    height: 250px!important;
+    margin-left: 0!important;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 960px){
+  img{
+    margin-left: -23px;
+  }
+}

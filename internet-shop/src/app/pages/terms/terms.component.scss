@@ -1,0 +1,13 @@
+*{
+  font-family: 'Rokkitt', serif;
+}
+.for-p{
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 540px) {
+  .for-p {
+    font-size: 0.8em !important;
+  }
+}
+

@@ -1,0 +1,60 @@
+<div class="d-flex flex-wrap justify-content-center  container-fluid mt-5">
+  <h4 class="text-center w-100" style="letter-spacing: 4px;">CLASSIC</h4>
+  <h6 class="text-center w-100" style="letter-spacing: 4px;">{{productsClassic.length}} Products</h6>
+  <div [routerLink]="['/user/products',product.id]"
+       *ngFor="let product of productsClassic;let i=index" hover
+       class="rounded col-12 col-sm-3 m-4">
+    <div class="text-center mt-2"><img [src]="product.img" width="250px" height="250px" alt=""></div>
+    <p class="lt text-center font-weight-normal">{{product.name}}</p>
+    <div class="d-flex justify-content-center">
+      <p class="lt cl1 mr-1 font-weight-normal text-center" *ngIf="product.size">{{product.size}}мм</p>
+      <p style="font-size: 0.9em;" class="text-center" *ngIf="product.anotherSize && product.size"> | </p>
+      <p class="anCl cl ml-1 text-center " [ngStyle]="{color:product.size?'gainsboro':'black'}"
+         *ngIf="product.anotherSize">
+        {{product.anotherSize}}мм</p>
+    </div>
+    <p class="lt text-center text-dark  font-weight-bold">{{product.price|currency}} </p>
+    <hr>
+  </div>
+  <h4 class="text-center w-100" style="letter-spacing: 4px;">CLASSIC PETITE</h4>
+  <h6 class="text-center w-100" style="letter-spacing: 4px;">{{productsClassicPetite.length}} Products</h6>
+  <div [routerLink]="['/user/products',product.id]"
+       *ngFor="let product of productsClassicPetite;let i=index" hover
+       class="rounded col-12 col-sm-3 m-4">
+    <div class="text-center mt-2"><img [src]="product.img" width="250px" height="250px" alt=""></div>
+    <p class="lt text-center font-weight-normal">{{product.name}}</p>
+    <div class="d-flex justify-content-center">
+      <p class="lt cl1 mr-1 font-weight-normal text-center" *ngIf="product.size">{{product.size}}мм</p>
+      <p style="font-size: 0.9em;" class="text-center" *ngIf="product.anotherSize && product.size"> | </p>
+      <p class="anCl cl ml-1 text-center " [ngStyle]="{color:product.size?'gainsboro':'black'}"
+         *ngIf="product.anotherSize">
+        {{product.anotherSize}}мм</p>
+    </div>
+    <p class="lt text-center text-dark  font-weight-bold">{{product.price|currency}} </p>
+    <hr>
+  </div>
+
+  <h4 class="text-center w-100" style="letter-spacing: 4px;">Dapper</h4>
+  <h6 class="text-center w-100" style="letter-spacing: 4px;">{{productsDapper.length}} Products</h6>
+  <div [routerLink]="['/user/products',product.id]"
+       *ngFor="let product of productsDapper;let i=index" hover
+       class="rounded col-12 col-sm-3 m-4">
+    <div class="text-center mt-2"><img [src]="product.img" width="250px" height="250px" alt=""></div>
+    <p class="lt text-center font-weight-normal">{{product.name}}</p>
+    <div class="d-flex justify-content-center">
+      <p class="lt cl1 mr-1 font-weight-normal text-center" *ngIf="product.size">{{product.size}}мм</p>
+      <p style="font-size: 0.9em;" class="text-center" *ngIf="product.anotherSize && product.size"> | </p>
+      <p class="anCl cl ml-1 text-center " [ngStyle]="{color:product.size?'gainsboro':'black'}"
+         *ngIf="product.anotherSize">
+        {{product.anotherSize}}мм</p>
+    </div>
+    <p class="lt text-center text-dark  font-weight-bold">{{product.price|currency}} </p>
+    <hr>
+  </div>
+
+
+</div>
+<div class="d-flex justify-content-center">
+  <!--<pagination-controls (pageChange)="pageActual = $event"></pagination-controls>-->
+</div>
+<div style="height: 50px;"></div>

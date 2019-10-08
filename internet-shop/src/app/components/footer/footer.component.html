@@ -1,0 +1,260 @@
+<section class="position-relative mt-5" *ngIf="url!=='/user/check_out'">
+  <div class="text-center position-absolute btnDiv ">
+    <button class="arrowBtn" (click)="btnSmothScroll()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0V0z"/>
+        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+      </svg>
+    </button>
+  </div>
+  <div class="myImg">
+    <div class="for-block">
+      <div class="block">
+        <div class="container mt-4">
+          <div class="col-12">
+            <h3 class="for-l">BE THE FIRST</h3>
+            <p style="margin-top: 15px;">Get the latest news, invites and offers straight to your mail.</p>
+          </div>
+          <div class="form-group d-inline-block col-8 position-relative">
+            <label for="email">Email address</label>
+            <input type="email" [formControl]="emails" (input)="checkvalue($event)" class="form-control " id="email"
+                   aria-describedby="emailHelp" placeholder="Enter email">
+            <span style="color: red" class="position-absolute"
+                 *ngIf="emails.invalid && emails.dirty">
+              * Введи email коректно
+            </span>
+          </div>
+          <div class="col-4 d-inline-block">
+            <button [disabled]="status" class="btn" (click)="sendEmail()" #btn>Sign Up</button>
+          </div>
+          <div class="col-12 mt-3">
+            <p>Click <a class="link" routerLink="privacy_policy">here</a> to read information on how Daniel
+              Wellington processes your personal data.</p>
+          </div>
+          <div class="links">
+            <svg viewBox="-110 1 511 511.99996" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m180 512h-81.992188c-13.695312 0-24.835937-11.140625-24.835937-24.835938v-184.9375h-47.835937c-13.695313 0-24.835938-11.144531-24.835938-24.835937v-79.246094c0-13.695312 11.140625-24.835937 24.835938-24.835937h47.835937v-39.683594c0-39.347656 12.355469-72.824219 35.726563-96.804688 23.476562-24.089843 56.285156-36.820312 94.878906-36.820312l62.53125.101562c13.671875.023438 24.792968 11.164063 24.792968 24.835938v73.578125c0 13.695313-11.136718 24.835937-24.828124 24.835937l-42.101563.015626c-12.839844 0-16.109375 2.574218-16.808594 3.363281-1.152343 1.308593-2.523437 5.007812-2.523437 15.222656v31.351563h58.269531c4.386719 0 8.636719 1.082031 12.289063 3.121093 7.878906 4.402344 12.777343 12.726563 12.777343 21.722657l-.03125 79.246093c0 13.6875-11.140625 24.828125-24.835937 24.828125h-58.46875v184.941406c0 13.695313-11.144532 24.835938-24.839844 24.835938zm-76.8125-30.015625h71.632812v-193.195313c0-9.144531 7.441407-16.582031 16.582032-16.582031h66.726562l.027344-68.882812h-66.757812c-9.140626 0-16.578126-7.4375-16.578126-16.582031v-44.789063c0-11.726563 1.191407-25.0625 10.042969-35.085937 10.695313-12.117188 27.550781-13.515626 39.300781-13.515626l36.921876-.015624v-63.226563l-57.332032-.09375c-62.023437 0-100.566406 39.703125-100.566406 103.609375v53.117188c0 9.140624-7.4375 16.582031-16.578125 16.582031h-56.09375v68.882812h56.09375c9.140625 0 16.578125 7.4375 16.578125 16.582031zm163.0625-451.867187h.003906zm0 0"/>
+            </svg>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="169.063px" height="169.063px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
+	 xml:space="preserve">
+<g>
+	<path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+	<path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+	<path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+</g>
+</svg>
+            <svg viewBox="0 -62 512.00199 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m334.808594 170.992188-113.113282-61.890626c-6.503906-3.558593-14.191406-3.425781-20.566406.351563-6.378906 3.78125-10.183594 10.460937-10.183594 17.875v122.71875c0 7.378906 3.78125 14.046875 10.117188 17.832031 3.308594 1.976563 6.976562 2.96875 10.652344 2.96875 3.367187 0 6.742187-.832031 9.847656-2.503906l113.117188-60.824219c6.714843-3.613281 10.90625-10.59375 10.9375-18.222656.027343-7.628906-4.113282-14.640625-10.808594-18.304687zm-113.859375 63.617187v-91.71875l84.539062 46.257813zm0 0"/>
+              <path
+                d="m508.234375 91.527344-.023437-.234375c-.433594-4.121094-4.75-40.777344-22.570313-59.421875-20.597656-21.929688-43.949219-24.59375-55.179687-25.871094-.929688-.105469-1.78125-.203125-2.542969-.304688l-.894531-.09375c-67.6875-4.921874-169.910157-5.5937495-170.933594-5.59765575l-.089844-.00390625-.089844.00390625c-1.023437.00390625-103.246094.67578175-171.542968 5.59765575l-.902344.09375c-.726563.097657-1.527344.1875-2.398438.289063-11.101562 1.28125-34.203125 3.949219-54.859375 26.671875-16.972656 18.445312-21.878906 54.316406-22.382812 58.347656l-.058594.523438c-.152344 1.714844-3.765625 42.539062-3.765625 83.523437v38.3125c0 40.984375 3.613281 81.808594 3.765625 83.527344l.027344.257813c.433593 4.054687 4.746093 40.039062 22.484375 58.691406 19.367187 21.195312 43.855468 24 57.027344 25.507812 2.082031.238282 3.875.441406 5.097656.65625l1.183594.164063c39.082031 3.71875 161.617187 5.550781 166.8125 5.625l.15625.003906.15625-.003906c1.023437-.003907 103.242187-.675781 170.929687-5.597657l.894531-.09375c.855469-.113281 1.816406-.214843 2.871094-.324218 11.039062-1.171875 34.015625-3.605469 54.386719-26.019532 16.972656-18.449218 21.882812-54.320312 22.382812-58.347656l.058594-.523437c.152344-1.71875 3.769531-42.539063 3.769531-83.523438v-38.3125c-.003906-40.984375-3.617187-81.804687-3.769531-83.523437zm-26.238281 121.835937c0 37.933594-3.3125 77-3.625 80.585938-1.273438 9.878906-6.449219 32.574219-14.71875 41.5625-12.75 14.027343-25.847656 15.417969-35.410156 16.429687-1.15625.121094-2.226563.238282-3.195313.359375-65.46875 4.734375-163.832031 5.460938-168.363281 5.488281-5.082032-.074218-125.824219-1.921874-163.714844-5.441406-1.941406-.316406-4.039062-.558594-6.25-.808594-11.214844-1.285156-26.566406-3.042968-38.371094-16.027343l-.277344-.296875c-8.125-8.464844-13.152343-29.6875-14.429687-41.148438-.238281-2.710937-3.636719-42.238281-3.636719-80.703125v-38.3125c0-37.890625 3.304688-76.914062 3.625-80.574219 1.519532-11.636718 6.792969-32.957031 14.71875-41.574218 13.140625-14.453125 26.996094-16.054688 36.160156-17.113282.875-.101562 1.691407-.195312 2.445313-.292968 66.421875-4.757813 165.492187-5.464844 169.046875-5.492188 3.554688.023438 102.589844.734375 168.421875 5.492188.808594.101562 1.691406.203125 2.640625.3125 9.425781 1.074218 23.671875 2.699218 36.746094 16.644531l.121094.128906c8.125 8.464844 13.152343 30.058594 14.429687 41.75.226563 2.558594 3.636719 42.171875 3.636719 80.71875zm0 0"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.015 512.015" style="enable-background:new 0 0 512.015 512.015;" xml:space="preserve" width="512" height="512">
+
+		<path d="M508.515,107.031l-0.16-0.2c-0.01-0.01-0.02-0.02-0.03-0.04c-0.01-0.01-0.03-0.03-0.04-0.04l-0.16-0.19    c-3.98-4.61-9.31-6.02-14.1-5.17c-2.18,0.01-4.31,0.06-6.4,0.15c4.05-6.3,7.61-13.38,10.28-21.33c1.83-5.46,0.37-11.48-3.74-15.5    c-4.12-4.02-10.17-5.33-15.58-3.38c-5.12,1.85-39.02,14.03-50.77,18.41c-0.44,0.17-0.75,0.25-0.93,0.29    c-0.34-0.17-1.12-0.62-2.46-1.75c-31.48-26.26-73.44-34.34-112.24-21.61c-37.2,12.21-64.92,41.85-74.14,79.3    c-2.57,10.47-2.96,21.08-3.28,31.36c-69.71-7.83-129.63-39.26-178.31-93.57c-3.25-3.62-8.05-5.44-12.89-4.89    c-4.84,0.56-9.1,3.43-11.44,7.7c-11.38,20.78-16.25,40.86-14.88,61.36c1.18,17.74,6.14,33.91,14.81,48.43    c-3.72-0.21-7.44,0.97-10.38,3.38c-3.73,3.05-5.76,7.7-5.46,12.51c1.63,26.94,10.17,49.94,25.38,68.36    c4.28,5.19,9.05,10.01,14.35,14.49c-1.1,0.9-2.07,1.97-2.88,3.18c-2.79,4.13-3.34,9.39-1.47,14.01    c13.5,33.33,35.59,55.68,67.05,67.63c-31.58,15.35-65.47,21.73-102.72,19.45c-6.86-0.42-13.13,3.88-15.22,10.43    c-2.08,6.55,0.56,13.68,6.41,17.3c48.74,30.17,106.23,44.16,161.7,44.16c56.85,0,111.2-15.4,158.63-45.17    c26.62-16.71,50.21-37.49,70.11-61.75c10.07-12.27,19.07-25.3,26.97-38.98c7.9-13.68,14.68-28.03,20.3-42.94    c12.2-32.4,18.66-66.83,19.19-102.35c0.25-0.78,1.26-2.67,2.85-4.31c7.59-7.88,16.07-15.77,24.28-23.4    c4.58-4.26,9.29-8.64,13.88-13.05c4.497-2.863,6.99-7.784,6.99-12.7C512.015,113.401,510.955,110.061,508.515,107.031z     M445.265,144.941c-2.6,2.69-11.08,12.41-11.25,24.3c-0.43,32.19-6.24,63.34-17.27,92.6    c-42.02,111.53-152.04,179.15-273.79,168.26c-24.17-2.16-47.04-6.92-68.44-14.22c32.76-6.09,63.25-19.27,92.18-39.72    c5.07-3.59,7.41-9.93,5.88-15.94c-1.53-6.02-6.61-10.48-12.77-11.21c-32.32-3.82-54.52-15.59-69.49-37.35h15.64    c7.21,0,13.41-5.14,14.74-12.23c1.33-7.09-2.58-14.13-9.3-16.75c-34.07-13.26-54.14-32.91-61.84-60.98    c9.08,2.39,17.96,4.73,26.95,7.11c7.1,1.87,14.51-1.67,17.52-8.37c3-6.7,0.71-14.59-5.41-18.64    c-26.08-17.26-39.63-38.8-41.44-65.86c-0.57-8.53,0.37-16.87,2.92-25.43c54.77,53.7,121.28,83.31,198.02,88.09    c8.2,0.51,15.29-5.67,15.89-13.87c0.4-5.39,0.56-10.55,0.71-15.54c0.29-9.43,0.57-18.35,2.46-26.05    c6.83-27.74,26.65-48.87,54.37-57.97c28.9-9.48,60.17-3.45,83.66,16.15c3.87,3.22,15.63,13.04,33.09,6.53    c1.72-0.64,3.43-1.27,5.15-1.91c-1.42,1.17-2.89,2.34-4.42,3.51c-7.08,3.506-10.275,12-7.11,19.36l0.2,0.48    c3.28,7.61,12.1,11.13,19.71,7.85c0.09-0.04,0.19-0.08,0.28-0.12c0.45-0.11,0.91-0.22,1.37-0.33    C450.695,139.411,447.945,142.161,445.265,144.941z"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="for-footer" *ngIf="url!=='/user/check_out'">
+<div class="anyMenu">
+  <div (click)="showWriteData($event.target)" class="d-flex pt-4 justify-content-between">
+    <h6 (click)="showbyText($event.target)" style="letter-spacing: 4px;">SHOP</h6>
+    <svg (click)="showbyPhoto($event.target)" xmlns="http://www.w3.org/2000/svg" [ngStyle]="{transform:show?'rotate(180deg)':'rotate(0)'}"
+         style="transition: 0.5s;" width="50" height="40" viewBox="0 0 24 24">
+      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+      >     <path fill="none" d="M0 0h24v24H0V0z"/>
+    </svg>
+  </div>
+
+  <div class="container forms mt-1" *ngIf="show" style="transition: 0.5s;">
+    <ul class="d-flex">
+      <li><a style="font-size: 16px;" routerLink="watch">Watches</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <div (click)="showWriteData($event.target)" class="d-flex justify-content-between">
+    <h6 (click)="showbyText($event.target)" style="letter-spacing: 4px;">SUPPORT</h6>
+    <svg  id=support (click)="showbyPhoto($event.target)" xmlns="http://www.w3.org/2000/svg" [ngStyle]="{transform:show1?'rotate(180deg)':'rotate(0)'}"
+         style="transition: 0.5s;margin-left: -25px;" width="50" height="40" viewBox="0 0 24 24">
+      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+      >     <path fill="none" d="M0 0h24v24H0V0z"/>
+    </svg>
+  </div>
+  <div class="container forms mt-1" *ngIf="show1" style="transition: 0.5s;">
+    <ul style="margin-left: 5px;" class="d-flex">
+      <li><a style="font-size: 16px;" routerLink="size_Info">Size Infrormation</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <div (click)="showWriteData($event.target)" class="d-flex justify-content-between">
+    <h6  (click)="showbyText($event.target)" style="letter-spacing: 4px;">INFORMATION</h6>
+    <svg id="info" (click)="showbyPhoto($event.target)"  xmlns="http://www.w3.org/2000/svg" [ngStyle]="{transform:show2?'rotate(180deg)':'rotate(0)'}"
+          style="transition: 0.5s;margin-left: -75px;" width="50" height="40" viewBox="0 0 24 24">
+      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+      >     <path fill="none" d="M0 0h24v24H0V0z"/>
+    </svg>
+  </div>
+  <div class="container forms mt-1" *ngIf="show2" style="transition: 0.5s;">
+    <ul class="ml-2">
+      <li class="d-flex justify-content-center"><a style="font-size: 16px;" routerLink="ret_policy">Return Policy</a></li>
+      <li class="d-flex justify-content-center"><a style="font-size: 16px;" routerLink="privacy_policy">Privacy Policy</a></li>
+      <li class="d-flex justify-content-center"><a style="font-size: 16px;" routerLink="terms">Terms</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <div (click)="showWriteData($event.target)" class="d-flex justify-content-between">
+    <h6 (click)="showbyText($event.target)" style="letter-spacing: 10px;">ABOUT US</h6>
+    <svg id="about" (click)="showbyPhoto($event.target)"  xmlns="http://www.w3.org/2000/svg" [ngStyle]="{transform:show3?'rotate(180deg)':'rotate(0)'}"
+          style="transition: 0.5s;margin-left: -75px;" width="50" height="40" viewBox="0 0 24 24">
+      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+      >     <path fill="none" d="M0 0h24v24H0V0z"/>
+    </svg>
+  </div>
+  <div class="container forms mt-1" *ngIf="show3" style="transition: 0.5s;">
+    <ul>
+      <li class="d-flex justify-content-center"><a style="font-size: 16px" class="our-story" routerLink="our_story">Our Story</a></li>
+      <li class="d-flex justify-content-center"><a style="font-size: 16px" class="our-story" (click)="checkisAdmin($event)" data-toggle="modal" data-target="#AdminModal"
+             #adminBtn>Admin</a></li>
+    </ul>
+  </div>
+  <hr>
+</div>
+
+
+
+
+
+
+  <div class="lin-footer" style="height: 100px;">
+    <div style="height: 100%;" class="container menu row justify-content-around align-items-center">
+      <div class="div-shop">
+        <h6  class="text-uppercase shop text-center ">SHOP</h6>
+        <ul>
+          <li><a routerLink="watch">Watches</a></li>
+        </ul>
+      </div>
+      <div class="div-sup">
+        <h6  class="text-uppercase sup text-center ">Support</h6>
+        <ul style="margin-left: 5px;">
+          <li><a routerLink="size_Info">Size Infrormation</a></li>
+        </ul>
+      </div>
+      <div class="mt-5">
+        <h6 class="text-uppercase info text-center ">Infornation</h6>
+        <ul class="ml-2">
+          <li><a routerLink="ret_policy">Return Policy</a></li>
+          <li><a routerLink="privacy_policy">Privacy Policy</a></li>
+          <li><a routerLink="terms">Terms</a></li>
+        </ul>
+      </div>
+      <div class="div-about-us">
+        <h6  class="text-uppercase about-us text-center ">About Us</h6>
+        <ul>
+          <li><a class="our-story" routerLink="our_story">Our Story</a></li>
+          <li><a class="our-story" (click)="checkisAdmin($event)" data-toggle="modal" data-target="#AdminModal"
+                 #adminBtn>Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="someHeight" >
+    <div style="height: 100%;" class="container-fluid row align-items-end justify-content-between">
+      <ul  class="d-flex ulPay align-items-end">
+        <li><img
+          src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/2ewe5eMPSEcIqwoU08QIOA/5d89569ef8dfe251d0b795f76e0163d1/visa-2x.png?ecom2=true&width=80&quality=100"
+          alt=""></li>
+        <li><img
+          src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/2MIeYuELok46G2wAIU64Ao/dc9ffe7987f1c1654a722a3506199561/mastercard-2x.png?ecom2=true&width=33&quality=100"
+          alt=""></li>
+        <li><img
+          src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/13q571kpXagKaugiUm8sqA/f292e71009a25c91f46b7a888e5cbccb/maestro-2x.png?ecom2=true&width=64&quality=100"
+          alt=""></li>
+        <li><img
+          src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/7rjkl2vvIk46uK2ius6Uiy/bd47cf4a76b302d4a39b1176e853a712/amex-2x.png?ecom2=true&width=27&quality=100"
+          alt=""></li>
+        <li><img
+          src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/3mlTXT3LWMyU8wKQaGm4YQ/26816edd4b522fb95031e74e2e80755d/discover-2x.png"
+          alt=""></li>
+        <li><img
+          src="https://www.danielwellington.com/ecom2-image-bucket/mv3xw5mnbbp0/3piI2aoGAUOiYQYc0KCw0Y/a9adef44c32c3efe97e34aebbb8feaa5/diners-club-2x.png?ecom2=true&width=74&quality=100"
+          alt=""></li>
+      </ul>
+      <p class="myp" style="height: 14%; margin-right: 10%;font-family: 'IM Fell DW Pica SC', serif;">© 2019 Daniel Wellington
+        AB</p>
+    </div>
+  </div>
+</footer>
+
+
+<div *ngIf="status" class="modal fade" id="AdminModal" tabindex="-1" role="dialog" aria-labelledby="AdminModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="AdminModalLabel">Admin Sign in</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class=" m-auto container">
+          <form [formGroup]="myForm" class="form-signin">
+            <div class="form-label-group">
+              <input type="text" id="login" class="form-control" formControlName="login" placeholder="Login" required
+                     autofocus>
+              <label for="login">login</label>
+            </div>
+            <div class="form-label-group">
+              <input type="password" id="password" class="form-control" formControlName="password"
+                     placeholder="Password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <button class="btn btn-primary  btn-block" (click)="signInLogin()" type="button">Sign In</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,17 @@
+<div class="container text-center mt-5">
+  <table class="table table-striped table-light">
+    <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>emails</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let email of emails; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{email.value}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
